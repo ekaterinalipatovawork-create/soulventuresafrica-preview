@@ -1,0 +1,190 @@
+.gt-lead {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: var(--color-on-primary);
+}
+
+.gt-lead__grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.gt-lead__e1,
+.gt-lead__e2,
+.gt-lead__e3 {
+  position: absolute;
+  margin: 0;
+}
+
+.gt-lead__grid picture,
+.gt-lead__grid img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gt-lead__grid p {
+  white-space: normal;
+}
+
+.gt-lead__grid a {
+  text-decoration: none;
+}
+
+.gt-lead__e2:hover {
+  background-color: var(--color-primary-hover);
+  transition: all 0.2s ease-in-out;
+}
+
+.gt-lead__e3:hover {
+  background-color: var(--color-primary-hover);
+  transition: all 0.2s ease-in-out;
+}
+
+.gt-lead {
+  height: calc(388 * var(--u));
+  height: round(down, calc(388 * var(--u)), 1px);
+}
+.gt-lead__e1 {
+  left: calc(171 * var(--u));
+  top: calc(89 * var(--u));
+  width: calc(858 * var(--u));
+  font-size: calc(30 * var(--u));
+  line-height: 1.5;
+  letter-spacing: calc(-2 * var(--u));
+  color: var(--color-heading-soft);
+  font-weight: 400;
+  text-align: center;
+}
+.gt-lead__e2 {
+  left: calc(280 * var(--u));
+  top: calc(233 * var(--u));
+  width: calc(300 * var(--u));
+  height: calc(65 * var(--u));
+  font-size: calc(25 * var(--u));
+  line-height: 1;
+  letter-spacing: calc(-1 * var(--u));
+  color: var(--color-on-primary);
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--color-primary);
+  border-radius: calc(20 * var(--u));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gt-lead__e3 {
+  left: calc(620 * var(--u));
+  top: calc(231 * var(--u));
+  width: calc(300 * var(--u));
+  height: calc(65 * var(--u));
+  font-size: calc(25 * var(--u));
+  line-height: 1;
+  letter-spacing: calc(-1 * var(--u));
+  color: var(--color-on-primary);
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--color-primary);
+  border-radius: calc(20 * var(--u));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1199px) {
+  .gt-lead {
+    height: calc(563 * var(--u));
+    height: round(down, calc(563 * var(--u)), 1px);
+  }
+  .gt-lead__e1 {
+    left: calc(30 * var(--u));
+    top: calc(390 * var(--u));
+}
+  .gt-lead__e2 {
+    left: calc(693 * var(--u));
+}
+  .gt-lead__e3 {
+    left: calc(703 * var(--u));
+}
+}
+
+@media (max-width: 959px) {
+  .gt-lead {
+    height: calc(368 * var(--u));
+    height: round(down, calc(368 * var(--u)), 1px);
+  }
+  .gt-lead__e1 {
+    left: calc(63 * var(--u));
+    top: calc(47 * var(--u));
+    width: calc(514 * var(--u));
+}
+  .gt-lead__e2 {
+    left: calc(73 * var(--u));
+    top: calc(255 * var(--u));
+    width: calc(222 * var(--u));
+    height: calc(52 * var(--u));
+    font-size: calc(20 * var(--u));
+}
+  .gt-lead__e3 {
+    left: calc(344 * var(--u));
+    top: calc(255 * var(--u));
+    width: calc(222 * var(--u));
+    height: calc(52 * var(--u));
+    font-size: calc(20 * var(--u));
+}
+}
+
+@media (max-width: 639px) {
+  .gt-lead {
+    height: calc(363 * var(--u));
+    height: round(down, calc(363 * var(--u)), 1px);
+  }
+  .gt-lead__e1 {
+    left: calc(47 * var(--u));
+    top: calc(71 * var(--u));
+    width: calc(386 * var(--u));
+    font-size: calc(20 * var(--u));
+}
+  .gt-lead__e2 {
+    left: calc(245 * var(--u));
+    top: calc(237 * var(--u));
+    width: calc(180 * var(--u));
+    height: calc(54 * var(--u));
+}
+  .gt-lead__e3 {
+    left: calc(55 * var(--u));
+    top: calc(237 * var(--u));
+    width: calc(180 * var(--u));
+    height: calc(54 * var(--u));
+}
+}
+
+@media (max-width: 479px) {
+  .gt-lead {
+    height: calc(393 * var(--u));
+    height: round(down, calc(393 * var(--u)), 1px);
+  }
+  .gt-lead__e1 {
+    left: calc(18 * var(--u));
+    top: calc(60 * var(--u));
+    width: calc(285 * var(--u));
+}
+  .gt-lead__e2 {
+    left: calc(70 * var(--u));
+    top: calc(284 * var(--u));
+    height: calc(50 * var(--u));
+    font-size: calc(17 * var(--u));
+}
+  .gt-lead__e3 {
+    left: calc(70 * var(--u));
+    top: calc(216 * var(--u));
+    width: calc(181 * var(--u));
+    height: calc(50 * var(--u));
+    font-size: calc(17 * var(--u));
+}
+}

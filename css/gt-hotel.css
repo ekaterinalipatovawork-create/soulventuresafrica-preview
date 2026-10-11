@@ -1,0 +1,124 @@
+.gt-hotel {
+  position: relative;
+  display: none;
+  overflow: hidden;
+  background: var(--color-on-primary);
+}
+
+.gt-hotel__grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.gt-hotel__e1,
+.gt-hotel__e2,
+.gt-hotel__e3 {
+  position: absolute;
+  margin: 0;
+}
+
+.gt-hotel__grid picture,
+.gt-hotel__grid img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gt-hotel__grid p {
+  white-space: normal;
+}
+
+.gt-hotel__grid a {
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .gt-hotel {
+    display: block;
+    height: calc(794 * var(--u));
+    height: round(down, calc(794 * var(--u)), 1px);
+  }
+  .gt-hotel__e1 {
+    left: calc(125 * var(--u));
+    top: calc(658 * var(--u));
+    width: calc(951 * var(--u));
+    height: calc(100 * var(--u));
+    background-color: var(--color-caption-box);
+    border-radius: calc(15 * var(--u));
+}
+  .gt-hotel__e2 {
+    left: calc(125 * var(--u));
+    top: calc(99 * var(--u));
+    width: calc(950 * var(--u));
+    height: calc(530 * var(--u));
+}
+  .gt-hotel__e3 {
+    left: calc(396 * var(--u));
+    top: calc(23 * var(--u));
+    width: calc(408 * var(--u));
+    font-size: calc(37 * var(--u));
+    line-height: 1.54;
+    letter-spacing: calc(-1 * var(--u));
+    color: var(--color-heading-soft);
+    font-weight: 400;
+    text-align: start;
+}
+}
+
+.gt-hotel__gallery {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+@media (min-width: 1200px) {
+  .gt-hotel__gallery {
+    height: calc(659 * var(--u));
+  }
+
+  .gt-hotel__gallery .gallery__slide picture,
+  .gt-hotel__gallery .gallery__slide img {
+    height: calc(530 * var(--u));
+  }
+
+  .gt-hotel__gallery .gallery__slide {
+    position: relative;
+  }
+
+  .gt-hotel__gallery .gallery__caption {
+    position: absolute;
+    top: calc(570 * var(--u));
+    left: calc(47.5 * var(--u));
+    width: calc(855 * var(--u));
+    margin: 0;
+    color: var(--color-on-primary);
+    font-size: calc(27 * var(--u));
+    font-weight: 300;
+    line-height: 1.55;
+    letter-spacing: calc(-2 * var(--u));
+  }
+
+  .gt-hotel__gallery .gallery__arrow {
+    top: calc(265 * var(--u));
+    width: calc(40 * var(--u));
+    height: calc(40 * var(--u));
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+  }
+
+  .gt-hotel__gallery .gallery__arrow--prev {
+    left: calc(-60 * var(--u));
+  }
+
+  .gt-hotel__gallery .gallery__arrow--next {
+    right: calc(-60 * var(--u));
+  }
+}
+
+.gt-hotel__gallery .gallery__slide img {
+  object-position: 50% 50%;
+}

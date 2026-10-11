@@ -1,0 +1,221 @@
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 20 * var(--u));
+  max-width: var(--header-width);
+  height: calc(55 * var(--u));
+  margin: 0 auto;
+  padding: 0 calc(10 * var(--u));
+  border-radius: var(--radius-sm);
+  color: var(--color-on-primary);
+  font-size: calc(22 * var(--u));
+  line-height: 1.55;
+  letter-spacing: calc(-1 * var(--u));
+}
+
+.nav::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: var(--color-nav-glass);
+}
+
+.nav__logo {
+  flex: none;
+  width: calc(25 * var(--u));
+  height: calc(36 * var(--u));
+  margin-right: auto;
+}
+
+.nav__logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav__links,
+.nav__contacts,
+.nav__cta {
+  display: none;
+}
+
+.nav__link {
+  display: block;
+  white-space: nowrap;
+}
+
+.nav__tools {
+  display: flex;
+  align-items: center;
+}
+
+.nav__wa {
+  flex: none;
+  width: calc(35 * var(--u));
+  height: calc(35 * var(--u));
+  margin-right: calc(7 * var(--u));
+  background: currentColor;
+  -webkit-mask: url('../assets/icons/whatsapp.svg') center / contain no-repeat;
+  mask: url('../assets/icons/whatsapp.svg') center / contain no-repeat;
+}
+
+.nav__menu {
+  width: calc(80 * var(--u));
+  height: calc(30 * var(--u));
+  border-radius: calc(15 * var(--u));
+  background: var(--color-surface);
+  color: var(--color-primary);
+  font-size: calc(16 * var(--u));
+  line-height: 1;
+  letter-spacing: calc(-1 * var(--u));
+  text-align: center;
+}
+
+.nav--hero {
+  position: absolute;
+  top: calc(70 * var(--u));
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.nav--fixed {
+  color: var(--color-primary);
+}
+
+.nav--fixed::before {
+  background: var(--color-nav-bg);
+}
+
+.nav--fixed .nav__wa {
+  color: var(--color-secondary);
+}
+
+.nav--fixed .nav__menu {
+  background: var(--color-secondary);
+  color: var(--color-on-secondary);
+}
+
+.site-header {
+  position: fixed;
+  top: calc(20 * var(--u));
+  right: 0;
+  left: 0;
+  z-index: 50;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity var(--duration-base) var(--easing-standard), transform var(--duration-base) var(--easing-standard);
+}
+
+.site-header[data-static] {
+  position: absolute;
+  top: calc(20 * var(--u));
+}
+
+.site-header.is-visible {
+  pointer-events: auto;
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 639px) {
+  .nav__wa {
+    margin-right: calc(5 * var(--u));
+  }
+
+  .site-header {
+    top: calc(10 * var(--u));
+  }
+}
+
+@media (max-width: 479px) {
+  .nav {
+    height: calc(50 * var(--u));
+  }
+
+  .nav__wa {
+    width: calc(30 * var(--u));
+    height: calc(30 * var(--u));
+    margin-right: calc(8 * var(--u));
+  }
+}
+
+@media (min-width: 960px) {
+  .nav {
+    width: calc(100% - 20 * var(--nu));
+    height: calc(55 * var(--nu));
+    padding: 0 calc(20 * var(--nu));
+    font-size: calc(22 * var(--nu));
+    letter-spacing: calc(-1 * var(--nu));
+  }
+
+  .nav__logo {
+    width: calc(30 * var(--nu));
+    height: calc(44 * var(--nu));
+    margin-top: calc(1 * var(--nu));
+    margin-right: calc(30 * var(--nu));
+  }
+
+  .nav__links {
+    display: flex;
+    gap: calc(20 * var(--nu));
+    margin-right: auto;
+  }
+
+  .nav__tools {
+    gap: calc(16 * var(--nu));
+  }
+
+  .nav__contacts {
+    display: block;
+    margin-right: calc(3 * var(--nu));
+  }
+
+  .nav__wa {
+    width: calc(35 * var(--nu));
+    height: calc(35 * var(--nu));
+    margin-right: 0;
+  }
+
+  .nav__cta {
+    display: block;
+    padding: calc(4 * var(--nu)) 0;
+    border-radius: calc(20 * var(--nu));
+    background: var(--color-surface);
+    color: var(--color-primary);
+    font-size: calc(22 * var(--nu));
+    line-height: calc(22 * var(--nu));
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+
+  .nav--fixed .nav__cta {
+    background: var(--color-secondary);
+    color: var(--color-on-secondary);
+  }
+
+  .nav--fixed .nav__logo {
+    margin-right: calc(30.5 * var(--nu));
+  }
+
+  .nav--fixed .nav__contacts {
+    margin-right: 0;
+  }
+
+  .nav--fixed .nav__wa {
+    margin-right: calc(-3 * var(--nu));
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-header {
+    top: 20px;
+  }
+}

@@ -1,0 +1,15 @@
+[data-reveal].is-pending {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+[data-reveal].is-pending.is-revealed {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal].is-pending {
+    opacity: 1;
+    transition: none;
+  }
+}

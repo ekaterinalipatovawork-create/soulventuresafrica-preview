@@ -1,0 +1,221 @@
+.reviews {
+  --head: 160;
+  --vx: 150;
+  --vw: 900;
+  --ch: 556;
+  --cw: 284;
+  --gap: 20;
+  --tail: 16;
+  --ay: 306;
+  position: relative;
+  height: calc(836 * var(--u));
+  height: round(down, calc(836 * var(--u)), 1px);
+  overflow: hidden;
+  background: var(--color-surface);
+}
+
+.reviews__grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.reviews__title {
+  position: absolute;
+  left: calc(79 * var(--u));
+  top: calc(48 * var(--u));
+  width: calc(1051 * var(--u));
+  color: var(--color-primary);
+  font-size: calc(35 * var(--u));
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: calc(-2 * var(--u));
+}
+
+.reviews__viewport {
+  position: absolute;
+  left: calc(var(--vx) * 1px);
+  top: calc(var(--head) * var(--u));
+  top: round(down, calc(var(--head) * var(--u)), 1px);
+  width: calc(var(--vw) * 1px);
+  height: calc(var(--ch) * 1px);
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.reviews__track {
+  display: flex;
+  gap: calc(var(--gap) * 1px);
+  width: max-content;
+  height: 100%;
+  transform: translate3d(calc(var(--x, 0) * -1px), 0, 0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.reviews__slide {
+  flex: 0 0 auto;
+  width: calc(var(--cw) * 1px);
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.reviews__slide picture,
+.reviews__slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.reviews__slide:nth-child(2) {
+  margin-left: calc(var(--m2, 3) * 1px);
+}
+
+.reviews__slide:nth-child(3) {
+  margin-left: calc(var(--m3, 5) * 1px);
+}
+
+.reviews__slide:nth-child(n+4) {
+  margin-left: calc(var(--mr, 0) * 1px);
+}
+
+.reviews__arrow {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  top: calc(var(--head) * var(--u) + var(--ay) * 1px);
+  top: calc(round(down, calc(var(--head) * var(--u)), 1px) + var(--ay) * 1px);
+}
+
+.reviews__arrow svg {
+  width: 20px;
+  height: 13.4px;
+}
+
+.reviews__arrow--prev {
+  left: 80px;
+}
+
+.reviews__arrow--next {
+  left: 1070px;
+}
+
+@media (max-width: 1199px) {
+  .reviews {
+    --vx: 10;
+    --tail: 0;
+    --ay: 586;
+    --m2: 0;
+    --m3: 0;
+    --vw: 940;
+    --gap: 20;
+    height: calc(916 * var(--u));
+    height: round(down, calc(916 * var(--u)), 1px);
+  }
+
+  .reviews__title {
+    left: calc(10 * var(--u));
+    width: calc(940 * var(--u));
+  }
+
+  .reviews__arrow--prev {
+    left: 425px;
+  }
+
+  .reviews__arrow--next {
+    left: 485px;
+  }
+}
+
+@media (max-width: 959px) {
+  .reviews {
+    --vw: 620;
+    --ay: 576;
+    height: calc(906 * var(--u));
+    height: round(down, calc(906 * var(--u)), 1px);
+  }
+
+  .reviews__title {
+    top: calc(50 * var(--u));
+    width: calc(620 * var(--u));
+  }
+
+  .reviews__arrow--prev {
+    left: 264px;
+  }
+
+  .reviews__arrow--next {
+    left: 326px;
+  }
+}
+
+@media (max-width: 639px) {
+  .reviews {
+    --head: 100;
+    --vw: 460;
+    --ch: 581;
+    --cw: 300;
+    --ay: 601;
+    height: calc(831 * var(--u));
+    height: round(down, calc(831 * var(--u)), 1px);
+  }
+
+  .reviews__title {
+    top: calc(33 * var(--u));
+    width: calc(460 * var(--u));
+    font-size: calc(30 * var(--u));
+  }
+
+  .reviews__arrow--prev {
+    left: 184px;
+  }
+
+  .reviews__arrow--next {
+    left: 246px;
+  }
+}
+
+@media (max-width: 479px) {
+  .reviews {
+    --head: 72;
+    --vw: 300;
+    --ch: 505;
+    --cw: 260;
+    --gap: 10;
+    --m3: 6;
+    --tail: -2;
+    --mr: 6;
+    --ay: 525;
+    height: calc(707 * var(--u));
+    height: round(down, calc(707 * var(--u)), 1px);
+  }
+
+  .reviews__title {
+    top: calc(25 * var(--u));
+    width: calc(300 * var(--u));
+    font-size: calc(20 * var(--u));
+  }
+
+  .reviews__arrow--prev {
+    left: 105px;
+  }
+
+  .reviews__arrow--next {
+    left: 165px;
+  }
+}
+
+.reviews__arrow:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}

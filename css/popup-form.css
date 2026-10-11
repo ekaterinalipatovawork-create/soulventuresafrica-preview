@@ -1,0 +1,39 @@
+.popup--form {
+  --sheet-h: 0px;
+}
+
+.popup--form .popup__sheet {
+  width: 460px;
+  max-width: 100%;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.popup--dim .popup__close {
+  color: var(--color-on-primary);
+}
+
+.popup-form {
+  padding: 64px 0 40px;
+}
+
+.popup-form__b24 {
+  min-height: 300px;
+}
+
+.popup-form__notice {
+  padding: 40px 30px;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-primary);
+  font-size: var(--font-body-lg-size);
+  line-height: 1.4;
+  letter-spacing: var(--font-body-lg-letter-spacing);
+  text-align: center;
+}
+
+@media (max-width: 639px) {
+  .popup-form__notice {
+    margin: 0 16px;
+  }
+}

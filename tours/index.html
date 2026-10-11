@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Туры</title>
+  <link rel="icon" href="/soulventuresafrica-preview/assets/img/favicon.png" type="image/png">
+  <link rel="preload" href="/soulventuresafrica-preview/assets/fonts/inter-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/base.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/header.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/hero.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/gallery.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/moments.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/formats.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/parks.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/cards.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/chains.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/reviews.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/contacts.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/telegram.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/menu.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/popup.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/popup-park.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/popup-form.css">
+  <link rel="stylesheet" href="/soulventuresafrica-preview/css/popup-doc.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <nav class="nav nav--fixed" aria-label="Основная навигация">
+      <a class="nav__logo" href="/soulventuresafrica-preview/" aria-label="Soul Ventures Africa"><img src="/soulventuresafrica-preview/assets/icons/logo-color.svg" alt="Soul Ventures Africa" width="411" height="590"></a>
+      <ul class="nav__links">
+        <li><a class="nav__link" href="/soulventuresafrica-preview/" style="width:calc(119.9 * var(--nu))">На главную</a></li>
+        <li><a class="nav__link" href="/soulventuresafrica-preview/grouptours" style="width:calc(110.8 * var(--nu))">Групповые</a></li>
+        <li><a class="nav__link" href="/soulventuresafrica-preview/about" style="width:calc(59.2 * var(--nu))">О нас</a></li>
+        <li><a class="nav__link" href="#otzivi" style="width:calc(80 * var(--nu))">Отзывы</a></li>
+        <li><a class="nav__link" href="/soulventuresafrica-preview/blog/" style="width:calc(46 * var(--nu))">Блог</a></li>
+      </ul>
+      <div class="nav__tools">
+        <a class="nav__contacts" href="#contacts" style="width:calc(94.6 * var(--nu))">Контакты</a>
+        <a class="nav__wa" href="https://wa.me/255750408232" aria-label="WhatsApp" target="_blank" rel="noopener"></a>
+        <a class="nav__cta" href="#popup:myform" style="width:calc(189 * var(--nu))">Подобрать тур</a>
+        <button class="nav__menu" type="button" data-menu-open>Меню</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero hero--tours" id="top">
+    <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="/soulventuresafrica-preview/assets/video/hero-2-poster.jpg">
+      <source src="/soulventuresafrica-preview/assets/video/hero-2.webm" type="video/webm"><source src="/soulventuresafrica-preview/assets/video/hero-2.mp4" type="video/mp4">
+    </video>
+    <div class="hero__veil"></div>
+    <nav class="nav nav--hero" aria-label="Навигация">
+      <a class="nav__logo" href="/soulventuresafrica-preview/" aria-label="Soul Ventures Africa"><img src="/soulventuresafrica-preview/assets/icons/logo-white.svg" alt="Soul Ventures Africa" width="411" height="590"></a>
+      <ul class="nav__links">
+        <li><a class="nav__link" href="/soulventuresafrica-preview/" style="width:calc(119.9 * var(--nu))">На главную</a></li>
+        <li><a class="nav__link" href="/soulventuresafrica-preview/grouptours" style="width:calc(113.7 * var(--nu))">Групповые</a></li>
+        <li><a class="nav__link" href="/soulventuresafrica-preview/about" style="width:calc(59.8 * var(--nu))">О нас</a></li>
+        <li><a class="nav__link" href="#otzivi" style="width:calc(80 * var(--nu))">Отзывы</a></li>
+        <li><a class="nav__link" href="/soulventuresafrica-preview/blog/" style="width:calc(46 * var(--nu))">Блог</a></li>
+      </ul>
+      <div class="nav__tools">
+        <a class="nav__contacts" href="#contacts" style="width:calc(93.2 * var(--nu))">Контакты</a>
+        <a class="nav__wa" href="https://wa.me/255750408232" aria-label="WhatsApp" target="_blank" rel="noopener"></a>
+        <a class="nav__cta" href="#popup:myform" style="width:calc(190 * var(--nu))">Подобрать тур</a>
+        <button class="nav__menu" type="button" data-menu-open>Меню</button>
+      </div>
+    </nav>
+    <div class="hero__inner">
+      <h1 class="hero__title">Ваше приключение начинается здесь</h1>
+    </div>
+  </section>
+
+  <section class="formats" id="formats" data-formats>
+    <div class="formats__grid">
+      <h2 class="formats__title">Выберите <span>ваш формат</span> индивидуального тура:</h2>
+      <div class="formats__slider">
+        <div class="formats__viewport">
+          <ul class="formats__track">
+          <li class="formats__slide formats__slide--1">
+            <div class="formats__photo"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-format-1.webp"><img src="/soulventuresafrica-preview/assets/img/tours-format-1.jpg" alt="" width="2080" height="854" loading="lazy" draggable="false"></picture></div>
+            <div class="formats__card"></div>
+            <p class="formats__title-line">Реализуем туры под любой запрос и пожелания</p>
+            <div class="formats__body"><ul><li>Приватные сафари-джипы.</li><li>Профессиональный гид, эксперт по Национальным паркам.</li><li>Отели и лоджии 4 и 5*.</li><li>Продуманная логистика</li><li>Без «VIP-наценок» на мелочах, вы получаете путешествие по формуле цена = качество.</li></ul></div>
+            <span class="formats__pill">Максимум возможных впечатлений</span>
+          </li>
+          <li class="formats__slide formats__slide--2">
+            <div class="formats__photo"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-format-2.webp"><img src="/soulventuresafrica-preview/assets/img/tours-format-2.jpg" alt="" width="2080" height="854" loading="lazy" draggable="false"></picture></div>
+            <div class="formats__card"></div>
+            <p class="formats__title-line">Комфортные маршруты для детей и взрослых</p>
+            <div class="formats__body"><ul><li>Сделаем маршрут с умеренным темпом, комфортными для каждого члена семьи от детей до самых взрослых.</li><li>Спокойный график, без спешки и длительных трансферов.</li><li>Безопасно и максимально удобно для каждого члена семьи.</li><li>Максимальная поддержка и контроль.</li></ul></div>
+            <span class="formats__pill">Семейная Танзания и Кения</span>
+          </li>
+          <li class="formats__slide formats__slide--3">
+            <div class="formats__photo"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-format-3.webp"><img src="/soulventuresafrica-preview/assets/img/tours-format-3.jpg" alt="" width="2080" height="854" loading="lazy" draggable="false"></picture></div>
+            <div class="formats__card"></div>
+            <p class="formats__title-line">Индивидуальный тур для двоих: приватность и романтика</p>
+            <div class="formats__body"><ul><li>Путешествие только для вас.</li><li>Личный сафари-джип, лучшие локации для важных событий.</li><li>Индивидуальный сценарий “вау-моментов” для вашей годовщины, дня рождения, медового месяца или простого, но увлекательного путешествия на двоих.</li></ul></div>
+            <span class="formats__pill">Из Африки с любовью</span>
+          </li>
+          <li class="formats__slide formats__slide--4">
+            <div class="formats__photo"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-format-4.webp"><img src="/soulventuresafrica-preview/assets/img/tours-format-4.jpg" alt="" width="2080" height="854" loading="lazy" draggable="false"></picture></div>
+            <div class="formats__card"></div>
+            <p class="formats__title-line">Всё сделано так, что вам захочется вернуться</p>
+            <div class="formats__body"><p>Как только вы ступите на Африканскую землю - начинается незабываемое экзотическое путешествие.</p><p>Активная и интересная программа, ненавязчивая забота, связь в любое время дня и ночи, сопровождение по маршруту от команды и профессиональный гид.</p><p>Лучший отпуск для компании успешных друзей.</p></div>
+            <span class="formats__pill">Друзья в отпуске</span>
+          </li>
+          <li class="formats__slide formats__slide--5">
+            <div class="formats__photo"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-format-5.webp"><img src="/soulventuresafrica-preview/assets/img/tours-format-5.jpg" alt="" width="2080" height="854" loading="lazy" draggable="false"></picture></div>
+            <div class="formats__card"></div>
+            <p class="formats__title-line">Маршрут по Танзании или Кении для тех, кто впервые в Африке</p>
+            <div class="formats__body"><ul><li>Подробная онлайн-консультация по направлениям, пляжам и Национальным паркам.</li><li>Индивидуальный план поездки по вашим предпочтениям и пожеланиям.</li><li>Подробная информация по особенностям поездки в Африку.</li><li>Сопровождение нашей командой 24/7 на протяжение всего тура.</li><li>Лучшее соотношение сафари и пляжного отдыха в мире.</li></ul></div>
+            <span class="formats__pill">Первый раз в Африку</span>
+          </li>
+          </ul>
+        </div>
+        <button class="formats__arrow formats__arrow--prev" type="button" aria-label="Назад"><svg viewBox="0 0 22 14.7275390625" fill="none" aria-hidden="true"><path d="M0.2928925 6.656675C-0.097631 7.047175 -0.097631 7.68035 0.2928925 8.070875L6.65685 14.434825C7.047375 14.82535 7.68055 14.82535 8.071075 14.434825C8.4616 14.044325 8.4616 13.41115 8.071075 13.020625L2.4142125 7.363775L8.071075 1.706915C8.4616 1.31639 8.4616 0.683225 8.071075 0.2927025C7.68055 -0.09782275 7.047375 -0.09782275 6.65685 0.2927025L0.2928925 6.656675ZM21 8.363775C21.552275 8.363775 22 7.91605 22 7.363775C22 6.811475 21.552275 6.363775 21 6.363775V8.363775ZM1 8.363775H21V6.363775H1V8.363775Z" fill="#fff"/></svg></button>
+        <button class="formats__arrow formats__arrow--next" type="button" aria-label="Вперёд"><svg viewBox="0 0 22 14.7275390625" fill="none" aria-hidden="true"><path d="M1 6.363775C0.447715 6.363775 0 6.811475 0 7.363775C0 7.91605 0.447715 8.363775 1 8.363775V6.363775ZM21.7071 8.070875C22.097625 7.68035 22.097625 7.047175 21.7071 6.656675L15.34315 0.2927025C14.952625 -0.09782275 14.31945 -0.09782275 13.928925 0.2927025C13.5384 0.683225 13.5384 1.31639 13.928925 1.706915L19.585775 7.363775L13.928925 13.020625C13.5384 13.41115 13.5384 14.044325 13.928925 14.434825C14.31945 14.82535 14.952625 14.82535 15.34315 14.434825L21.7071 8.070875ZM1 8.363775H21V6.363775H1V8.363775Z" fill="#fff"/></svg></button>
+      </div>
+      <a class="formats__button" href="#popup:myform1">Оставить заявку на подбор тура</a>
+    </div>
+  </section>
+
+  <section class="parks parks--tz" id="parks-tanzania">
+    <div class="parks__grid">
+      <h2 class="parks__title">Национальные парки Танзании</h2>
+      <ul class="parks__list">
+        <li class="parks__item">
+          <a class="parks__tile" href="#popup:park1" aria-label="Национальный парк Серенгети"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-tz-1.webp"><img src="/soulventuresafrica-preview/assets/img/tours-tz-1.jpg" alt="" width="640" height="900" loading="lazy"></picture></a>
+          <p class="parks__name">Национальный парк Серенгети</p>
+        </li>
+        <li class="parks__item">
+          <a class="parks__tile" href="#popup:park2" aria-label="Национальный парк Нгоронгоро"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-tz-2.webp"><img src="/soulventuresafrica-preview/assets/img/tours-tz-2.jpg" alt="" width="640" height="900" loading="lazy"></picture></a>
+          <p class="parks__name">Национальный парк Нгоронгоро</p>
+        </li>
+        <li class="parks__item">
+          <a class="parks__tile" href="#popup:park3" aria-label="Национальный парк Тарангире"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-tz-3.webp"><img src="/soulventuresafrica-preview/assets/img/tours-tz-3.jpg" alt="" width="640" height="900" loading="lazy"></picture></a>
+          <p class="parks__name">Национальный парк Тарангире</p>
+        </li>
+        <li class="parks__item">
+          <a class="parks__tile" href="#popup:park4" aria-label="Национальный парк Аруша"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-tz-4.webp"><img src="/soulventuresafrica-preview/assets/img/tours-tz-4.jpg" alt="" width="640" height="900" loading="lazy"></picture></a>
+          <p class="parks__name">Национальный парк Аруша</p>
+        </li>
+        <li class="parks__item">
+          <a class="parks__tile" href="#popup:park5" aria-label="Национальный парк Мкомази"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-tz-5.webp"><img src="/soulventuresafrica-preview/assets/img/tours-tz-5.jpg" alt="" width="640" height="900" loading="lazy"></picture></a>
+          <p class="parks__name">Национальный парк Мкомази</p>
+        </li>
+        <li class="parks__item">
+          <a class="parks__tile" href="#popup:park6" aria-label="Озеро Маньяра"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-tz-6.webp"><img src="/soulventuresafrica-preview/assets/img/tours-tz-6.jpg" alt="" width="640" height="900" loading="lazy"></picture></a>
+          <p class="parks__name">Озеро Маньяра</p>
+        </li>
+        <li class="parks__item">
+          <a class="parks__tile" href="#popup:park7" aria-label="Озеро Натрон"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-tz-7.webp"><img src="/soulventuresafrica-preview/assets/img/tours-tz-7.jpg" alt="" width="640" height="900" loading="lazy"></picture></a>
+          <p class="parks__name">Озеро Натрон</p>
+        </li>
+        <li class="parks__item">
+          <a class="parks__tile" href="#popup:park8" aria-label="Вулкан Ол Доиньо Ленгай"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-tz-8.webp"><img src="/soulventuresafrica-preview/assets/img/tours-tz-8.jpg" alt="" width="640" height="900" loading="lazy"></picture></a>
+          <p class="parks__name">Вулкан Ол Доиньо Ленгай</p>
+        </li>
+        <li class="parks__item">
+          <a class="parks__tile" href="#popup:park9" aria-label="Килиманджаро"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-tz-9.webp"><img src="/soulventuresafrica-preview/assets/img/tours-tz-9.jpg" alt="" width="640" height="900" loading="lazy"></picture></a>
+          <p class="parks__name">Килиманджаро</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="parks parks--ke" id="parks-kenya">
+    <div class="parks__grid">
+      <h2 class="parks__title">Национальные парки Кении</h2>
+      <ul class="parks__list">
+        <li class="parks__item">
+          <div class="parks__tile"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-ke-1.webp"><img src="/soulventuresafrica-preview/assets/img/tours-ke-1.jpg" alt="" width="640" height="900" loading="lazy"></picture></div>
+          <p class="parks__name">Национальный парк Масаи Мара</p>
+        </li>
+        <li class="parks__item">
+          <div class="parks__tile"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-ke-2.webp"><img src="/soulventuresafrica-preview/assets/img/tours-ke-2.jpg" alt="" width="640" height="900" loading="lazy"></picture></div>
+          <p class="parks__name">Озеро Накуру</p>
+        </li>
+        <li class="parks__item">
+          <div class="parks__tile"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-ke-3.webp"><img src="/soulventuresafrica-preview/assets/img/tours-ke-3.jpg" alt="" width="640" height="900" loading="lazy"></picture></div>
+          <p class="parks__name">Национальный парк Самбуру</p>
+        </li>
+        <li class="parks__item">
+          <div class="parks__tile"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-ke-4.webp"><img src="/soulventuresafrica-preview/assets/img/tours-ke-4.jpg" alt="" width="640" height="900" loading="lazy"></picture></div>
+          <p class="parks__name">Национальный парк Амбосели</p>
+        </li>
+        <li class="parks__item">
+          <div class="parks__tile"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-ke-5.webp"><img src="/soulventuresafrica-preview/assets/img/tours-ke-5.jpg" alt="" width="640" height="900" loading="lazy"></picture></div>
+          <p class="parks__name">Национальный парк Цаво</p>
+        </li>
+        <li class="parks__item">
+          <div class="parks__tile"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-ke-6.webp"><img src="/soulventuresafrica-preview/assets/img/tours-ke-6.jpg" alt="" width="640" height="900" loading="lazy"></picture></div>
+          <p class="parks__name">Озеро Найваша</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cards" id="cards">
+    <div class="cards__grid">
+      <h2 class="cards__title">Здесь есть всё, чтобы почувствовать себя&nbsp;живым и&nbsp;счастливым!</h2>
+      <picture class="cards__photo cards__photo--a"><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-card-4.webp"><img src="/soulventuresafrica-preview/assets/img/tours-card-4.jpg" alt="" width="1006" height="700" loading="lazy"></picture>
+      <div class="cards__pill cards__pill--a"><p class="cards__text">Сила Природы, буйство красок, красивейшие Национальные парки, вулканы и огромное количество нетронутых человеком удивительных мест</p></div>
+      <picture class="cards__photo cards__photo--b"><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-card-3.webp"><img src="/soulventuresafrica-preview/assets/img/tours-card-3.jpg" alt="" width="1200" height="840" loading="lazy"></picture>
+      <div class="cards__pill cards__pill--b"><p class="cards__text">Разнообразие животных, дикие племена, белоснежные пляжи,&nbsp;ритмичные танцы</p></div>
+      <picture class="cards__photo cards__photo--c"><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-card-2.webp"><img src="/soulventuresafrica-preview/assets/img/tours-card-2.jpg" alt="" width="1200" height="842" loading="lazy"></picture>
+      <div class="cards__pill cards__pill--c"><p class="cards__text">Закаты и рассветы, ярчайшее Солнце и мощный Океан</p></div>
+      <picture class="cards__photo cards__photo--d"><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-card-1.webp"><img src="/soulventuresafrica-preview/assets/img/tours-card-1.jpg" alt="" width="1200" height="837" loading="lazy"></picture>
+      <div class="cards__pill cards__pill--d"><p class="cards__text">Дух Африки, который проявляется в&nbsp;жизнерадостности людей&nbsp;и&nbsp;их безмятежности с&nbsp;девизом «Акуна Матата»</p></div>
+    </div>
+  </section>
+
+  <section class="chains" id="hotels">
+    <div class="chains__bg"></div>
+    <div class="chains__grid">
+      <h2 class="chains__title">Лучшие отели</h2>
+      <p class="chains__lead">Мы имеем лицензию туроператора на месте, поэтому напрямую работаем с лучшими отелями Танзании и Кении, а также регулярно проверяем их лично</p>
+      <ul class="chains__list">
+        <li class="chains__item">
+          <picture class="chains__photo"><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-hotel-1.webp"><img src="/soulventuresafrica-preview/assets/img/tours-hotel-1.jpg" alt="" width="960" height="1200" loading="lazy"></picture>
+          <p class="chains__name">Сеть отелей Lemala</p>
+        </li>
+        <li class="chains__item">
+          <picture class="chains__photo"><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-hotel-2.webp"><img src="/soulventuresafrica-preview/assets/img/tours-hotel-2.jpg" alt="" width="921" height="1200" loading="lazy"></picture>
+          <p class="chains__name">Сеть отелей Melia</p>
+        </li>
+        <li class="chains__item">
+          <picture class="chains__photo"><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-hotel-3.webp"><img src="/soulventuresafrica-preview/assets/img/tours-hotel-3.jpg" alt="" width="920" height="1200" loading="lazy"></picture>
+          <p class="chains__name">Сеть отелей AndBeyond</p>
+        </li>
+        <li class="chains__item">
+          <picture class="chains__photo"><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-hotel-4.webp"><img src="/soulventuresafrica-preview/assets/img/tours-hotel-4.jpg" alt="" width="921" height="1200" loading="lazy"></picture>
+          <p class="chains__name">Сеть отелей Four Seasons</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="moments" id="moments">
+    <div class="moments__grid">
+      <h2 class="moments__title">Вы получите незабываемые эмоции<br>на всю жизнь!</h2>
+      <div class="gallery moments__gallery" data-gallery tabindex="0">
+        <div class="gallery__viewport">
+          <ul class="gallery__track">
+          <li class="gallery__slide"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-gallery-2.webp"><img src="/soulventuresafrica-preview/assets/img/tours-gallery-2.jpg" alt="" width="2080" height="1010" loading="lazy" draggable="false"></picture></li>
+          <li class="gallery__slide"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-gallery-3.webp"><img src="/soulventuresafrica-preview/assets/img/tours-gallery-3.jpg" alt="" width="2080" height="1010" loading="lazy" draggable="false"></picture></li>
+          <li class="gallery__slide"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-gallery-4.webp"><img src="/soulventuresafrica-preview/assets/img/tours-gallery-4.jpg" alt="" width="2080" height="1010" loading="lazy" draggable="false"></picture></li>
+          <li class="gallery__slide"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-gallery-5.webp"><img src="/soulventuresafrica-preview/assets/img/tours-gallery-5.jpg" alt="" width="2080" height="1010" loading="lazy" draggable="false"></picture></li>
+          <li class="gallery__slide"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-gallery-6.webp"><img src="/soulventuresafrica-preview/assets/img/tours-gallery-6.jpg" alt="" width="2080" height="1010" loading="lazy" draggable="false"></picture></li>
+          <li class="gallery__slide"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-gallery-1.webp"><img src="/soulventuresafrica-preview/assets/img/tours-gallery-1.jpg" alt="" width="2080" height="1010" loading="lazy" draggable="false"></picture></li>
+          </ul>
+        </div>
+        <button class="gallery__arrow gallery__arrow--prev" type="button" aria-label="Назад"><svg viewBox="0 0 94 94" aria-hidden="true"><path d="M63 47.917H30"/><path d="M46.917 64L63 47.917L46.917 31.834"/></svg></button>
+        <button class="gallery__arrow gallery__arrow--next" type="button" aria-label="Вперёд"><svg viewBox="0 0 94 94" aria-hidden="true"><path d="M63 47.917H30"/><path d="M46.917 64L63 47.917L46.917 31.834"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="otzivi" data-reviews>
+    <div class="reviews__grid">
+      <h2 class="reviews__title">Отзывы наших клиентов</h2>
+      <div class="reviews__viewport">
+        <ul class="reviews__track">
+          <li class="reviews__slide"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/review-1.webp"><img src="/soulventuresafrica-preview/assets/img/review-1.jpg" alt="" width="640" height="1244" loading="lazy"></picture></li>
+          <li class="reviews__slide"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/review-2.webp"><img src="/soulventuresafrica-preview/assets/img/review-2.jpg" alt="" width="640" height="1244" loading="lazy"></picture></li>
+          <li class="reviews__slide"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/review-3.webp"><img src="/soulventuresafrica-preview/assets/img/review-3.jpg" alt="" width="640" height="1244" loading="lazy"></picture></li>
+          <li class="reviews__slide"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/review-4.webp"><img src="/soulventuresafrica-preview/assets/img/review-4.jpg" alt="" width="640" height="1244" loading="lazy"></picture></li>
+          <li class="reviews__slide"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/review-5.webp"><img src="/soulventuresafrica-preview/assets/img/review-5.jpg" alt="" width="640" height="1244" loading="lazy"></picture></li>
+          <li class="reviews__slide"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/review-6.webp"><img src="/soulventuresafrica-preview/assets/img/review-6.jpg" alt="" width="640" height="1244" loading="lazy"></picture></li>
+          <li class="reviews__slide"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/review-7.webp"><img src="/soulventuresafrica-preview/assets/img/review-7.jpg" alt="" width="640" height="1244" loading="lazy"></picture></li>
+          <li class="reviews__slide"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/review-8.webp"><img src="/soulventuresafrica-preview/assets/img/review-8.jpg" alt="" width="640" height="1244" loading="lazy"></picture></li>
+          <li class="reviews__slide"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/review-9.webp"><img src="/soulventuresafrica-preview/assets/img/review-9.jpg" alt="" width="640" height="1244" loading="lazy"></picture></li>
+        </ul>
+      </div>
+      <button class="reviews__arrow reviews__arrow--prev" type="button" aria-label="Назад"><svg viewBox="0 0 22 14.7275390625" fill="none" aria-hidden="true"><path fill="#fff" d="M0.2928925 6.656675C-0.097631 7.047175 -0.097631 7.68035 0.2928925 8.070875L6.65685 14.434825C7.047375 14.82535 7.68055 14.82535 8.071075 14.434825C8.4616 14.044325 8.4616 13.41115 8.071075 13.020625L2.4142125 7.363775L8.071075 1.706915C8.4616 1.31639 8.4616 0.683225 8.071075 0.2927025C7.68055 -0.09782275 7.047375 -0.09782275 6.65685 0.2927025L0.2928925 6.656675ZM21 8.363775C21.552275 8.363775 22 7.91605 22 7.363775C22 6.811475 21.552275 6.363775 21 6.363775V8.363775ZM1 8.363775H21V6.363775H1V8.363775Z"/></svg></button>
+      <button class="reviews__arrow reviews__arrow--next" type="button" aria-label="Вперёд"><svg viewBox="0 0 22 14.7275390625" fill="none" aria-hidden="true"><path fill="#fff" d="M1 6.363775C0.447715 6.363775 0 6.811475 0 7.363775C0 7.91605 0.447715 8.363775 1 8.363775V6.363775ZM21.7071 8.070875C22.097625 7.68035 22.097625 7.047175 21.7071 6.656675L15.34315 0.2927025C14.952625 -0.09782275 14.31945 -0.09782275 13.928925 0.2927025C13.5384 0.683225 13.5384 1.31639 13.928925 1.706915L19.585775 7.363775L13.928925 13.020625C13.5384 13.41115 13.5384 14.044325 13.928925 14.434825C14.31945 14.82535 14.952625 14.82535 15.34315 14.434825L21.7071 8.070875ZM1 8.363775H21V6.363775H1V8.363775Z"/></svg></button>
+    </div>
+  </section>
+
+  <footer class="contacts" id="contacts">
+    <picture class="contacts__bg"><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/contacts-bg.webp"><img src="/soulventuresafrica-preview/assets/img/contacts-bg.jpg" alt="" width="1680" height="1125" loading="lazy"></picture>
+    <div class="contacts__grid">
+      <a class="contacts__link contacts__link--1" href="#hotels">Отели</a>
+      <a class="contacts__link contacts__link--2" href="/soulventuresafrica-preview/tours">Туры</a>
+      <a class="contacts__link contacts__link--3" href="#otzivi">Отзывы</a>
+      <a class="contacts__link contacts__link--4" href="/soulventuresafrica-preview/about">О нас</a>
+      <a class="contacts__phone" href="tel:+255750408232">+255750408232</a>
+      <a class="contacts__email" href="mailto:info@soulventuresafrica.com">info@soulventuresafrica.com</a>
+      <a class="contacts__wa" href="https://wa.me/255750408232" aria-label="WhatsApp" target="_blank" rel="noopener"></a>
+      <h2 class="contacts__title">Отправься в Африку с нами</h2>
+      <a class="contacts__cta" href="#popup:myform">Оставить заявку</a>
+      <div class="contacts__walker contacts__walker--cub"><img src="/soulventuresafrica-preview/assets/img/cub.svg" alt="" width="67" height="40"></div>
+      <div class="contacts__walker contacts__walker--lion"><img src="/soulventuresafrica-preview/assets/img/lion.svg" alt="" width="169" height="93"></div>
+      <a class="contacts__doc contacts__doc--1" href="#popup:doc2">Согласие на обработку персональных данных</a>
+      <a class="contacts__doc contacts__doc--2" href="#popup:doc1">Политика в отношении обработки персональных данных</a>
+      <a class="contacts__doc contacts__doc--3" href="#popup:doc3">Согласие на новостную и рекламную рассылку</a>
+      <p class="contacts__req">ИП КОНОВАЛОВА АЛЛА ИВАНОВНА,<br>4. г.Саратов, Астраханская д.104 пом 6<br><br>ИНН 645053370976 ОГРНИП 326645700024628<br>Тел.: +255750408232<br>e-mail: <a href="mailto:info@soulventuresafrica.com">info@soulventuresafrica.com</a></p>
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d496.2390133003773!2d39.3063259!3d-5.7257995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18431f74343867d9%3A0xf1fde468edf57e4f!2sSoul%20Ventures%20Africa!5e0!3m2!1sru!2sde!4v1782134378865!5m2!1sru!2sde" title="Map" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="contacts__line"></div>
+  </footer>
+
+  <div class="popup popup--park popup--park1" id="popup-park1" data-popup="park1" role="dialog" aria-modal="true" aria-label="Национальный парк Серенгети" hidden>
+    <div class="popup__scroll">
+      <div class="popup__sheet">
+        <div class="popup__grid">
+          <div class="popup-park__photo"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-pop-1.webp"><img src="/soulventuresafrica-preview/assets/img/tours-pop-1.jpg" alt="" width="1200" height="976" loading="lazy"></picture></div>
+          <span class="popup-park__tag"></span>
+          <p class="popup-park__name">Национальный парк Серенгети</p>
+          <p class="popup-park__text">Лучший сафари-парк в Африке и самый крупный парк на севере Танзании — его территория занимает 14 763 квадратных километра и представляет собой бесконечную саванну.<br><br>Попав сюда, время останавливается, и ты перемещаешься в совершенно другой первозданный мир дикой природы. Именно поэтому это место называют «Источником Колыбели Жизни всего человечества». Именно здесь были обнаружены останки первых людей.<br><br>Люди со всего мира приезжают сюда только с одной целью — увидеть невероятное событие, которое представляет собой Великая миграция антилоп гну, зебр, газелей и канн. Животные совершают свой массовый поход, чтобы утолить жажду и полакомиться свежей травой. Им приходится прокладывать свой маршрут через реки Серенгети, в которых обитают крокодилы и гиппопотамы. Такие большие стада животных в движении не увидеть больше нигде.<br><br>В парке также обитает большая популяция львов, леопардов, гиен, гепардов, слонов, жирафов, буйволов и других животных. Вы сможете увидеть их всех на расстоянии вытянутой руки. Этот парк был одним из первых объектов, внесенных в список Всемирного наследия ЮНЕСКО.</p>
+          <a class="popup-park__button" href="#popup:myform1">Оставить заявку на подбор тура</a>
+        </div>
+      </div>
+    </div>
+    <button class="popup__close" type="button" aria-label="Закрыть диалоговое окно"><svg viewBox="0 0 23 23" width="23" height="23" aria-hidden="true"><path fill="#79593d" d="M0 1.414 1.414 0 23 21.586 21.586 23z"/><path fill="#79593d" d="M21.586 0 23 1.414 1.414 23 0 21.586z"/></svg></button>
+  </div>
+  <div class="popup popup--park popup--park2" id="popup-park2" data-popup="park2" role="dialog" aria-modal="true" aria-label="Национальный парк Нгоронгоро" hidden>
+    <div class="popup__scroll">
+      <div class="popup__sheet">
+        <div class="popup__grid">
+          <div class="popup-park__photo"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-pop-2.webp"><img src="/soulventuresafrica-preview/assets/img/tours-pop-2.jpg" alt="" width="1200" height="976" loading="lazy"></picture></div>
+          <span class="popup-park__tag"></span>
+          <p class="popup-park__name">Национальный парк Нгоронгоро</p>
+          <p class="popup-park__text">Одно из самых интересных и впечатляющих мест в Африке с самой большой плотностью диких животных на квадратный километр в мире.<br><br>Огромный кратер возник в результате коллапса крупного вулкана около 2,5 миллионов лет назад. Красоту этого места сложно описать словами. В кратере обитают все представители из большой африканской пятерки, более 25 000 особей проживают на площади 265 кв. км. Львы, леопарды, буйволы, носороги, бегемоты, жирафы и другие животные находятся внутри кратера круглый год. Также здесь можно увидеть редких кошачьих — сервалов и каракалов.<br><br>Уникальная экосистема занесена в список Всемирного наследия ЮНЕСКО.</p>
+          <a class="popup-park__button" href="#popup:myform1">Оставить заявку на подбор тура</a>
+        </div>
+      </div>
+    </div>
+    <button class="popup__close" type="button" aria-label="Закрыть диалоговое окно"><svg viewBox="0 0 23 23" width="23" height="23" aria-hidden="true"><path fill="#79593d" d="M0 1.414 1.414 0 23 21.586 21.586 23z"/><path fill="#79593d" d="M21.586 0 23 1.414 1.414 23 0 21.586z"/></svg></button>
+  </div>
+  <div class="popup popup--park popup--park3" id="popup-park3" data-popup="park3" role="dialog" aria-modal="true" aria-label="Национальный парк Тарангире" hidden>
+    <div class="popup__scroll">
+      <div class="popup__sheet">
+        <div class="popup__grid">
+          <div class="popup-park__photo"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-pop-3.webp"><img src="/soulventuresafrica-preview/assets/img/tours-pop-3.jpg" alt="" width="1200" height="976" loading="lazy"></picture></div>
+          <span class="popup-park__tag"></span>
+          <p class="popup-park__name">Национальный парк Тарангире</p>
+          <p class="popup-park__text">На территории парка Тарангире вы увидите большое количество самых удивительных, загадочных и мощных растений Африки, под названием баобаб. Это одно из самых толстых деревьев в мире — диаметр ствола достигает 8 метров, а высота составляет 18—25 метров. У баобаба нет годовых колец, поэтому достоверно определить возраст старых растений не представляется возможным.<br><br>По наиболее осторожным оценкам, баобаб живет максимум около тысячи лет; в то же время имеются данные о том, что возраст дерева диаметром 4,5 метра, определённый методом радиоуглеродного анализа, составляет более 4500 лет.<br><br>Вы только представьте, как много эти удивительные растения видели за свою жизнь! Чему бы они могли нас научить? Что рассказать?<br><br>В данном парке представлена самая большая популяция африканских слонов в Танзании. Вы можете понаблюдать за их жизнью в диких условиях. Также здесь обитают 4 вида животных из большой пятёрки — львы, леопарды, слоны и буйволы, а также другие представители саванн — антилопы, гиены, зебры, жирафы, обезьяны и птицы.</p>
+          <a class="popup-park__button" href="#popup:myform1">Оставить заявку на подбор тура</a>
+        </div>
+      </div>
+    </div>
+    <button class="popup__close" type="button" aria-label="Закрыть диалоговое окно"><svg viewBox="0 0 23 23" width="23" height="23" aria-hidden="true"><path fill="#79593d" d="M0 1.414 1.414 0 23 21.586 21.586 23z"/><path fill="#79593d" d="M21.586 0 23 1.414 1.414 23 0 21.586z"/></svg></button>
+  </div>
+  <div class="popup popup--park popup--park4" id="popup-park4" data-popup="park4" role="dialog" aria-modal="true" aria-label="Национальный парк Аруша" hidden>
+    <div class="popup__scroll">
+      <div class="popup__sheet">
+        <div class="popup__grid">
+          <div class="popup-park__photo"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-pop-4.webp"><img src="/soulventuresafrica-preview/assets/img/tours-pop-4.jpg" alt="" width="1200" height="976" loading="lazy"></picture></div>
+          <span class="popup-park__tag"></span>
+          <p class="popup-park__name">Национальный парк Аруша</p>
+          <p class="popup-park__text">Национальный парк, находящийся в 40 минутах езды от одноименного города. Парк Аруша включает в себя вулкан Меру (4566 м), кратер Нгуродото, цветные озера Момелла с фламинго и бегемотами, водопады, тропические леса и саванну. Здесь есть уникальная возможность сафари на каноэ, а также пешего сафари с рейнджером. В парке самая большая популяция жирафов, зебры, антилопы, слоны, обезьяны, буйволы и другие животные. Рай для любителей птиц — более 400 видов.</p>
+          <a class="popup-park__button" href="#popup:myform1">Оставить заявку на подбор тура</a>
+        </div>
+      </div>
+    </div>
+    <button class="popup__close" type="button" aria-label="Закрыть диалоговое окно"><svg viewBox="0 0 23 23" width="23" height="23" aria-hidden="true"><path fill="#79593d" d="M0 1.414 1.414 0 23 21.586 21.586 23z"/><path fill="#79593d" d="M21.586 0 23 1.414 1.414 23 0 21.586z"/></svg></button>
+  </div>
+  <div class="popup popup--park popup--park5" id="popup-park5" data-popup="park5" role="dialog" aria-modal="true" aria-label="Национальный парк Мкомази" hidden>
+    <div class="popup__scroll">
+      <div class="popup__sheet">
+        <div class="popup__grid">
+          <div class="popup-park__photo"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-pop-5.webp"><img src="/soulventuresafrica-preview/assets/img/tours-pop-5.jpg" alt="" width="1200" height="976" loading="lazy"></picture></div>
+          <span class="popup-park__tag"></span>
+          <p class="popup-park__name">Национальный парк Мкомази</p>
+          <p class="popup-park__text">Национальный парк Мкомази — самый молодой в Танзании. Парк находится в северо-восточной части страны, и, помимо невероятной красоты природы, у него есть еще одна особенность: на его территории осуществляется программа сохранения черных носорогов (около 70 особей). Мкомази — единственный парк, где их можно увидеть максимально близко. Здесь также обитают другие виды вымирающих животных — гиеновидные собаки и жирафовая газель.<br><br>В парке более 450 видов птиц и более 50 видов животных, обитает вся большая африканская пятерка, и здесь нет большого количества туристов, поэтому он идеально подходит для погружения в дикую природу.</p>
+          <a class="popup-park__button" href="#popup:myform1">Оставить заявку на подбор тура</a>
+        </div>
+      </div>
+    </div>
+    <button class="popup__close" type="button" aria-label="Закрыть диалоговое окно"><svg viewBox="0 0 23 23" width="23" height="23" aria-hidden="true"><path fill="#79593d" d="M0 1.414 1.414 0 23 21.586 21.586 23z"/><path fill="#79593d" d="M21.586 0 23 1.414 1.414 23 0 21.586z"/></svg></button>
+  </div>
+  <div class="popup popup--park popup--park6" id="popup-park6" data-popup="park6" role="dialog" aria-modal="true" aria-label="Озеро Маньяра" hidden>
+    <div class="popup__scroll">
+      <div class="popup__sheet">
+        <div class="popup__grid">
+          <div class="popup-park__photo"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-pop-6.webp"><img src="/soulventuresafrica-preview/assets/img/tours-pop-6.jpg" alt="" width="1200" height="976" loading="lazy"></picture></div>
+          <span class="popup-park__tag"></span>
+          <p class="popup-park__name">Озеро Маньяра</p>
+          <p class="popup-park__text">Национальный парк представляет собой щелочное озеро на дне Великой Рифтовой долины и территории вокруг него, которые Эрнест Хемингуэй превозносил как «самое прекрасное, что я видел в Африке».<br><br>Знаковыми животными здесь являются львы, лазящие по деревьям, а также огромные стаи розовых фламинго, проживающие на территории озера. Более 400 видов птиц, жирафы, зебры, антилопы и слоны — невероятные пейзажи никого не оставят равнодушными.</p>
+          <a class="popup-park__button" href="#popup:myform1">Оставить заявку на подбор тура</a>
+        </div>
+      </div>
+    </div>
+    <button class="popup__close" type="button" aria-label="Закрыть диалоговое окно"><svg viewBox="0 0 23 23" width="23" height="23" aria-hidden="true"><path fill="#79593d" d="M0 1.414 1.414 0 23 21.586 21.586 23z"/><path fill="#79593d" d="M21.586 0 23 1.414 1.414 23 0 21.586z"/></svg></button>
+  </div>
+  <div class="popup popup--park popup--park7" id="popup-park7" data-popup="park7" role="dialog" aria-modal="true" aria-label="Озеро Натрон" hidden>
+    <div class="popup__scroll">
+      <div class="popup__sheet">
+        <div class="popup__grid">
+          <div class="popup-park__photo"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-pop-7.webp"><img src="/soulventuresafrica-preview/assets/img/tours-pop-7.jpg" alt="" width="1200" height="976" loading="lazy"></picture></div>
+          <span class="popup-park__tag"></span>
+          <p class="popup-park__name">Озеро Натрон</p>
+          <p class="popup-park__text">Чудо природы — розовое щелочное озеро, на котором проживает огромная популяция фламинго. Уникальность озера в том, что в сухой сезон его состав превращает все живое в камень.<br><br>Из-за небольшой глубины, всего до 3 метров, в жаркое время вода озера прогревается до 50–60 градусов. Цвет воды постоянно меняется от розового до красного и даже оранжевого.</p>
+          <a class="popup-park__button" href="#popup:myform1">Оставить заявку на подбор тура</a>
+        </div>
+      </div>
+    </div>
+    <button class="popup__close" type="button" aria-label="Закрыть диалоговое окно"><svg viewBox="0 0 23 23" width="23" height="23" aria-hidden="true"><path fill="#79593d" d="M0 1.414 1.414 0 23 21.586 21.586 23z"/><path fill="#79593d" d="M21.586 0 23 1.414 1.414 23 0 21.586z"/></svg></button>
+  </div>
+  <div class="popup popup--park popup--park8" id="popup-park8" data-popup="park8" role="dialog" aria-modal="true" aria-label="Вулкан Ол Доиньо Ленгай" hidden>
+    <div class="popup__scroll">
+      <div class="popup__sheet">
+        <div class="popup__grid">
+          <div class="popup-park__photo"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-pop-8.webp"><img src="/soulventuresafrica-preview/assets/img/tours-pop-8.jpg" alt="" width="1200" height="976" loading="lazy"></picture></div>
+          <span class="popup-park__tag"></span>
+          <p class="popup-park__name">Вулкан Ол Доиньо Ленгай</p>
+          <p class="popup-park__text">Единственный действующий вулкан на территории Восточной Африки, который входит в вулканическую систему Великой Рифтовой долины.<br><br>Он находится у озера Натрон и представляет собой конусообразную гору высотой 878 метров над уровнем моря. Здесь вы увидите космические пейзажи, бурлящую лаву при восхождении и сможете пообщаться с племенами, которые живут у подножия.</p>
+          <a class="popup-park__button" href="#popup:myform1">Оставить заявку на подбор тура</a>
+        </div>
+      </div>
+    </div>
+    <button class="popup__close" type="button" aria-label="Закрыть диалоговое окно"><svg viewBox="0 0 23 23" width="23" height="23" aria-hidden="true"><path fill="#79593d" d="M0 1.414 1.414 0 23 21.586 21.586 23z"/><path fill="#79593d" d="M21.586 0 23 1.414 1.414 23 0 21.586z"/></svg></button>
+  </div>
+  <div class="popup popup--park popup--park9" id="popup-park9" data-popup="park9" role="dialog" aria-modal="true" aria-label="Килиманджаро" hidden>
+    <div class="popup__scroll">
+      <div class="popup__sheet">
+        <div class="popup__grid">
+          <div class="popup-park__photo"><picture><source type="image/webp" srcset="/soulventuresafrica-preview/assets/img/tours-pop-9.webp"><img src="/soulventuresafrica-preview/assets/img/tours-pop-9.jpg" alt="" width="1200" height="976" loading="lazy"></picture></div>
+          <span class="popup-park__tag"></span>
+          <p class="popup-park__name">Килиманджаро</p>
+          <p class="popup-park__text">Потухший стратовулкан, самая высокая в мире отдельностоящая гора и самая высокая точка Африки. Высота — 5895 метров над уровнем моря. Килиманджаро имеет три вулканические вершины: Шира, Мавензи и Кибо, а также свой климат и пять зон растительности.<br><br>С Килиманджаро связано огромное количество легенд и захватывающих дух историй. Она достаточно легка для восхождения по сравнению с другими более высокими горами, но хорошая физическая подготовка всё-таки потребуется. Мы предлагаем полноценные восхождения по всем маршрутам, экскурсии по предгорьям Килиманджаро, а также отели с невероятным видом на крышу Африки.</p>
+          <a class="popup-park__button" href="#popup:myform1">Оставить заявку на подбор тура</a>
+        </div>
+      </div>
+    </div>
+    <button class="popup__close" type="button" aria-label="Закрыть диалоговое окно"><svg viewBox="0 0 23 23" width="23" height="23" aria-hidden="true"><path fill="#79593d" d="M0 1.414 1.414 0 23 21.586 21.586 23z"/><path fill="#79593d" d="M21.586 0 23 1.414 1.414 23 0 21.586z"/></svg></button>
+  </div>
+
+  <a class="tg-float" href="https://telegram.me/+255750408232" aria-label="Telegram" target="_blank" rel="noopener"><img src="/soulventuresafrica-preview/assets/icons/telegram.webp" alt="" width="148" height="148"></a>
+
+  <div class="menu" aria-hidden="true">
+    <div class="menu__panel">
+      <button class="menu__close" type="button" aria-label="Close menu" data-menu-close><span class="menu__close-icon"></span></button>
+      <div class="menu__container">
+        <ul class="menu__list">
+        <li><a class="menu__link" href="/soulventuresafrica-preview/">На главную</a></li>
+        <li><a class="menu__link" href="/soulventuresafrica-preview/grouptours">Групповые</a></li>
+        <li><a class="menu__link" href="#hotels">Отели</a></li>
+        <li><a class="menu__link" href="#otzivi">Отзывы</a></li>
+        <li><a class="menu__link" href="/soulventuresafrica-preview/about">О нас</a></li>
+        <li><a class="menu__link" href="/soulventuresafrica-preview/blog/">Блог</a></li>
+        <li><a class="menu__link" href="#contacts">Контакты</a></li>
+        </ul>
+        <div class="menu__side">
+          <a class="menu__social" href="https://wa.me/255750408232?text=" aria-label="WhatsApp" target="_blank" rel="noopener"><img src="/soulventuresafrica-preview/assets/icons/menu-whatsapp.svg" width="30" height="30" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup popup--dim popup--form" id="popup-myform" data-popup="myform1 myform" role="dialog" aria-modal="true" aria-label="Оставить заявку" hidden>
+    <div class="popup__scroll">
+      <div class="popup__sheet">
+        <div class="popup-form">
+          <div class="popup-form__notice" role="status">Предпросмотр — форма отключена</div>
+        </div>
+      </div>
+    </div>
+    <button class="popup__close" type="button" aria-label="Закрыть диалоговое окно"><svg viewBox="0 0 23 23" width="23" height="23" aria-hidden="true"><path fill="currentColor" d="M0 1.414 1.414 0 23 21.586 21.586 23z"/><path fill="currentColor" d="M21.586 0 23 1.414 1.414 23 0 21.586z"/></svg></button>
+  </div>
+
+  <div class="popup popup--dim popup--doc" id="popup-doc1" data-popup="doc1" role="dialog" aria-modal="true" aria-label="Политика обработки персональных данных" hidden>
+    <div class="popup__scroll">
+      <div class="popup__sheet">
+        <div class="popup-doc__viewer" tabindex="0">
+          <div class="popup-doc__page"><picture><source srcset="/soulventuresafrica-preview/assets/img/doc-1-1.webp" type="image/webp"><img src="/soulventuresafrica-preview/assets/img/doc-1-1.jpg" alt="Политика обработки персональных данных, страница 1" width="1496" height="2115" loading="lazy" decoding="async"></picture></div>
+          <div class="popup-doc__page"><picture><source srcset="/soulventuresafrica-preview/assets/img/doc-1-2.webp" type="image/webp"><img src="/soulventuresafrica-preview/assets/img/doc-1-2.jpg" alt="Политика обработки персональных данных, страница 2" width="1496" height="2115" loading="lazy" decoding="async"></picture></div>
+          <div class="popup-doc__page"><picture><source srcset="/soulventuresafrica-preview/assets/img/doc-1-3.webp" type="image/webp"><img src="/soulventuresafrica-preview/assets/img/doc-1-3.jpg" alt="Политика обработки персональных данных, страница 3" width="1496" height="2115" loading="lazy" decoding="async"></picture></div>
+          <div class="popup-doc__page"><picture><source srcset="/soulventuresafrica-preview/assets/img/doc-1-4.webp" type="image/webp"><img src="/soulventuresafrica-preview/assets/img/doc-1-4.jpg" alt="Политика обработки персональных данных, страница 4" width="1496" height="2115" loading="lazy" decoding="async"></picture></div>
+          <div class="popup-doc__page"><picture><source srcset="/soulventuresafrica-preview/assets/img/doc-1-5.webp" type="image/webp"><img src="/soulventuresafrica-preview/assets/img/doc-1-5.jpg" alt="Политика обработки персональных данных, страница 5" width="1496" height="2115" loading="lazy" decoding="async"></picture></div>
+          <div class="popup-doc__page"><picture><source srcset="/soulventuresafrica-preview/assets/img/doc-1-6.webp" type="image/webp"><img src="/soulventuresafrica-preview/assets/img/doc-1-6.jpg" alt="Политика обработки персональных данных, страница 6" width="1496" height="2115" loading="lazy" decoding="async"></picture></div>
+          <div class="popup-doc__page"><picture><source srcset="/soulventuresafrica-preview/assets/img/doc-1-7.webp" type="image/webp"><img src="/soulventuresafrica-preview/assets/img/doc-1-7.jpg" alt="Политика обработки персональных данных, страница 7" width="1496" height="2115" loading="lazy" decoding="async"></picture></div>
+        </div>
+      </div>
+    </div>
+    <button class="popup__close" type="button" aria-label="Закрыть диалоговое окно"><svg viewBox="0 0 23 23" width="23" height="23" aria-hidden="true"><path fill="currentColor" d="M0 1.414 1.414 0 23 21.586 21.586 23z"/><path fill="currentColor" d="M21.586 0 23 1.414 1.414 23 0 21.586z"/></svg></button>
+  </div>
+
+  <div class="popup popup--dim popup--doc" id="popup-doc2" data-popup="doc2" role="dialog" aria-modal="true" aria-label="Согласие на обработку персональных данных" hidden>
+    <div class="popup__scroll">
+      <div class="popup__sheet">
+        <div class="popup-doc__viewer" tabindex="0">
+          <div class="popup-doc__page"><picture><source srcset="/soulventuresafrica-preview/assets/img/doc-2-1.webp" type="image/webp"><img src="/soulventuresafrica-preview/assets/img/doc-2-1.jpg" alt="Согласие на обработку персональных данных, страница 1" width="1496" height="2115" loading="lazy" decoding="async"></picture></div>
+          <div class="popup-doc__page"><picture><source srcset="/soulventuresafrica-preview/assets/img/doc-2-2.webp" type="image/webp"><img src="/soulventuresafrica-preview/assets/img/doc-2-2.jpg" alt="Согласие на обработку персональных данных, страница 2" width="1496" height="2115" loading="lazy" decoding="async"></picture></div>
+          <div class="popup-doc__page"><picture><source srcset="/soulventuresafrica-preview/assets/img/doc-2-3.webp" type="image/webp"><img src="/soulventuresafrica-preview/assets/img/doc-2-3.jpg" alt="Согласие на обработку персональных данных, страница 3" width="1496" height="2115" loading="lazy" decoding="async"></picture></div>
+        </div>
+      </div>
+    </div>
+    <button class="popup__close" type="button" aria-label="Закрыть диалоговое окно"><svg viewBox="0 0 23 23" width="23" height="23" aria-hidden="true"><path fill="currentColor" d="M0 1.414 1.414 0 23 21.586 21.586 23z"/><path fill="currentColor" d="M21.586 0 23 1.414 1.414 23 0 21.586z"/></svg></button>
+  </div>
+
+  <div class="popup popup--dim popup--doc" id="popup-doc3" data-popup="doc3" role="dialog" aria-modal="true" aria-label="Согласие на рекламную рассылку" hidden>
+    <div class="popup__scroll">
+      <div class="popup__sheet">
+        <div class="popup-doc__viewer" tabindex="0">
+          <div class="popup-doc__page"><picture><source srcset="/soulventuresafrica-preview/assets/img/doc-3-1.webp" type="image/webp"><img src="/soulventuresafrica-preview/assets/img/doc-3-1.jpg" alt="Согласие на рекламную рассылку, страница 1" width="1496" height="2115" loading="lazy" decoding="async"></picture></div>
+        </div>
+      </div>
+    </div>
+    <button class="popup__close" type="button" aria-label="Закрыть диалоговое окно"><svg viewBox="0 0 23 23" width="23" height="23" aria-hidden="true"><path fill="currentColor" d="M0 1.414 1.414 0 23 21.586 21.586 23z"/><path fill="currentColor" d="M21.586 0 23 1.414 1.414 23 0 21.586z"/></svg></button>
+  </div>
+
+  <script src="/soulventuresafrica-preview/js/header.js" defer></script>
+  <script src="/soulventuresafrica-preview/js/gallery.js" defer></script>
+  <script src="/soulventuresafrica-preview/js/formats.js" defer></script>
+  <script src="/soulventuresafrica-preview/js/reviews.js" defer></script>
+  <script src="/soulventuresafrica-preview/js/popup.js" defer></script>
+  <script src="/soulventuresafrica-preview/js/contacts.js" defer></script>
+</body>
+</html>

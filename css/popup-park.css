@@ -1,0 +1,273 @@
+.popup-park__photo,
+.popup-park__tag,
+.popup-park__name,
+.popup-park__text,
+.popup-park__button {
+  position: absolute;
+  margin: 0;
+}
+
+.popup--park {
+  --sheet-h: calc(var(--h) * var(--u));
+}
+
+.popup--park .popup__sheet {
+  height: calc(var(--h) * var(--u));
+  height: round(down, calc(var(--h) * var(--u)), 1px);
+}
+
+.popup-park__photo {
+  left: calc(var(--ix) * var(--u));
+  top: calc(var(--iy) * var(--u));
+  width: calc(var(--iw) * var(--u));
+  height: calc(var(--ih) * var(--u));
+  overflow: hidden;
+}
+
+.popup-park__photo picture,
+.popup-park__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.popup-park__photo img {
+  object-fit: cover;
+}
+
+.popup-park__tag {
+  left: calc(var(--px) * var(--u));
+  top: calc(var(--py) * var(--u));
+  width: calc(var(--pw) * var(--u));
+  height: calc(50 * var(--u));
+  border-radius: calc(15 * var(--u));
+  background: var(--color-surface-variant);
+}
+
+.popup-park__name {
+  left: calc(var(--nx) * var(--u));
+  top: calc(var(--ny) * var(--u));
+  width: calc(var(--nw) * var(--u));
+  color: var(--color-primary);
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: calc(var(--nfs) * var(--u));
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: calc(-1 * var(--u));
+}
+
+.popup-park__text {
+  left: calc(var(--tx) * var(--u));
+  top: calc(var(--ty) * var(--u));
+  width: calc(var(--tw) * var(--u));
+  color: var(--color-on-surface-variant);
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: calc(var(--tfs) * var(--u));
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: calc(var(--tls) * var(--u));
+}
+
+.popup-park__button {
+  left: calc(var(--bx) * var(--u));
+  top: calc(var(--by) * var(--u));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--bw) * var(--u));
+  height: calc(var(--bh) * var(--u));
+  border-radius: calc(30 * var(--u));
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: calc(var(--bfs) * var(--u));
+  font-weight: 400;
+  line-height: calc(var(--blh) * var(--u));
+  letter-spacing: calc(-1 * var(--u));
+  text-align: center;
+  text-decoration: none;
+}
+
+.popup--park {
+  --h: 728;
+  --ix: 80;
+  --iy: 120;
+  --iw: 600;
+  --ih: 488;
+  --tx: 720;
+  --ty: 206;
+  --tw: 399;
+  --px: 720;
+  --py: 121;
+  --pw: 241;
+  --bx: 720;
+  --by: 548;
+  --bw: 450;
+  --bh: 60;
+  --nx: 736;
+  --ny: 138;
+  --nw: 301;
+  --tfs: 13;
+  --tls: -1;
+  --nfs: 17;
+  --bfs: 25;
+  --blh: 38.75;
+}
+
+.popup--park1 { --tw: 401; --pw: 266; }
+.popup--park2 { --tw: 401; --pw: 277; }
+.popup--park3 { --pw: 268; }
+.popup--park5 { --pw: 256; }
+.popup--park6 { --pw: 153; }
+.popup--park7 { --pw: 140; }
+.popup--park9 { --pw: 152; }
+
+@media (max-width: 1199px) {
+  .popup--park {
+    --h: 728;
+    --ix: 10;
+    --iy: 120;
+    --iw: 480;
+    --ih: 488;
+    --tx: 551;
+    --ty: 205;
+    --tw: 399;
+    --px: 551;
+    --py: 120;
+    --pw: 241;
+    --bx: 551;
+    --by: 548;
+    --bw: 450;
+    --bh: 60;
+    --nx: 567;
+    --ny: 137;
+    --nw: 301;
+    --tfs: 13;
+    --tls: -1;
+    --nfs: 17;
+    --bfs: 25;
+    --blh: 38.75;
+  }
+
+  .popup--park1 { --ix: 11; --tx: 549; --ty: 209; --tw: 401; --px: 549; --py: 124; --pw: 266; --bx: 548; --nx: 565; --ny: 141; }
+  .popup--park2 { --ix: 12; --tx: 549; --ty: 210; --tw: 401; --px: 549; --py: 125; --pw: 277; --bx: 549; --nx: 565; --ny: 142; }
+  .popup--park3 { --ty: 209; --py: 124; --pw: 268; --ny: 141; }
+  .popup--park4 { --ty: 206; --py: 121; --ny: 138; }
+  .popup--park5 { --ty: 204; --py: 119; --pw: 256; --ny: 136; }
+  .popup--park6 { --tx: 550; --px: 550; --pw: 153; --bx: 550; --nx: 566; }
+  .popup--park7 { --pw: 140; }
+  .popup--park9 { --iy: 121; --tx: 550; --px: 550; --pw: 152; --bx: 550; --nx: 566; }
+}
+
+@media (max-width: 959px) {
+  .popup--park {
+    --h: 1021;
+    --ix: 10;
+    --iy: 120;
+    --iw: 620;
+    --ih: 488;
+    --tx: 10;
+    --ty: 733;
+    --tw: 620;
+    --px: 10;
+    --py: 648;
+    --pw: 241;
+    --bx: 10;
+    --by: 851;
+    --bw: 450;
+    --bh: 60;
+    --nx: 26;
+    --ny: 665;
+    --nw: 301;
+    --tfs: 13;
+    --tls: -1;
+    --nfs: 17;
+    --bfs: 25;
+    --blh: 38.75;
+  }
+
+  .popup--park1 { --h: 1151; --pw: 266; --by: 981; }
+  .popup--park2 { --h: 1047; --pw: 277; --by: 917; }
+  .popup--park3 { --h: 1143; --ty: 725; --py: 640; --pw: 268; --by: 973; --ny: 657; }
+  .popup--park4 { --h: 995; --ty: 732; --by: 824; --ny: 664; }
+  .popup--park5 { --pw: 256; --by: 891; }
+  .popup--park6 { --pw: 153; }
+  .popup--park7 { --h: 1008; --pw: 140; --by: 838; }
+  .popup--park9 { --h: 1047; --iy: 121; --pw: 152; --by: 877; }
+}
+
+@media (max-width: 639px) {
+  .popup--park {
+    --h: 1006;
+    --ix: 10;
+    --iy: 80;
+    --iw: 460;
+    --ih: 488;
+    --tx: 10;
+    --ty: 693;
+    --tw: 460;
+    --px: 10;
+    --py: 608;
+    --pw: 241;
+    --bx: 10;
+    --by: 876;
+    --bw: 450;
+    --bh: 60;
+    --nx: 26;
+    --ny: 625;
+    --nw: 301;
+    --tfs: 13;
+    --tls: -1;
+    --nfs: 17;
+    --bfs: 25;
+    --blh: 38.75;
+  }
+
+  .popup--park1 { --h: 1126; --ty: 683; --py: 598; --pw: 266; --by: 996; --ny: 615; }
+  .popup--park2 { --pw: 277; }
+  .popup--park3 { --h: 1123; --pw: 268; --by: 993; }
+  .popup--park4 { --h: 934; --by: 804; }
+  .popup--park5 { --h: 999; --ty: 698; --pw: 256; --by: 869; }
+  .popup--park6 { --h: 974; --ty: 700; --py: 610; --pw: 153; --by: 844; --ny: 627; }
+  .popup--park7 { --h: 954; --pw: 140; --by: 824; }
+  .popup--park8 { --h: 955; --by: 825; }
+  .popup--park9 { --pw: 152; }
+}
+
+@media (max-width: 479px) {
+  .popup--park {
+    --h: 675;
+    --ix: 10;
+    --iy: 60;
+    --iw: 300;
+    --ih: 400;
+    --tx: 10;
+    --ty: 550;
+    --tw: 300;
+    --px: 10;
+    --py: 480;
+    --pw: 208;
+    --bx: 10;
+    --by: 570;
+    --bw: 250;
+    --bh: 45;
+    --nx: 26;
+    --ny: 498;
+    --nw: 301;
+    --tfs: 10;
+    --tls: 0;
+    --nfs: 13;
+    --bfs: 16;
+    --blh: 24.8;
+  }
+
+  .popup--park1 { --h: 955; --by: 850; --ny: 499; }
+  .popup--park2 { --h: 813; --ty: 548; --py: 478; --pw: 214; --by: 728; --ny: 496; }
+  .popup--park3 { --h: 935; --by: 830; --ny: 497; }
+  .popup--park4 { --h: 765; --pw: 185; --by: 660; }
+  .popup--park5 { --h: 883; --pw: 200; --by: 778; --tfs: 13; --tls: -1; }
+  .popup--park6 { --h: 785; --pw: 123; --by: 680; --ny: 497; }
+  .popup--park7 { --ih: 300; --ty: 450; --py: 380; --pw: 113; --ny: 398; }
+  .popup--park8 { --ih: 300; --ty: 450; --py: 380; --pw: 185; --ny: 398; }
+  .popup--park9 { --h: 825; --pw: 119; --by: 720; }
+}

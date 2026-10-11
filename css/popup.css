@@ -1,0 +1,83 @@
+.popup {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--color-overlay-popup);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+}
+
+.popup--dim {
+  background: var(--color-overlay-popup-strong);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+.popup:focus {
+  outline: 0;
+}
+
+.popup[hidden] {
+  display: none;
+}
+
+.popup.is-open {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, visibility 0s;
+}
+
+.popup__scroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+.popup__sheet {
+  flex: none;
+  width: 100%;
+  margin: clamp(0px, calc((var(--sheet-h) - 100dvh) * 1000), 65px) 0;
+  background: var(--color-surface);
+}
+
+.popup__grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.popup__close {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.popup__close svg {
+  display: block;
+  width: 23px;
+  height: 23px;
+}
+
+body.is-popup-open {
+  overflow: hidden;
+}

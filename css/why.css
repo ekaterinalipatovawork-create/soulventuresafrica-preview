@@ -1,0 +1,601 @@
+.why {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-surface-variant);
+}
+
+.why__bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: calc(50 * var(--u)) calc(50 * var(--u)) 0 0;
+}
+
+.why__bg picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.why__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.why__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #000000;
+  opacity: 0.4;
+}
+
+.why__grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.why__title {
+  position: absolute;
+  left: 50%;
+  width: calc(463 * var(--u));
+  margin-left: calc(-231 * var(--u));
+  color: var(--color-on-primary);
+  font-weight: 400;
+  line-height: 1;
+  font-size: calc(35 * var(--u));
+  letter-spacing: calc(-2 * var(--u));
+  text-align: center;
+}
+
+.why__list {
+  position: absolute;
+  inset: 0;
+}
+
+.why__card {
+  position: absolute;
+  border-radius: calc(20 * var(--u));
+  background: var(--color-surface);
+}
+
+.why__photo {
+  position: absolute;
+  overflow: hidden;
+  border-radius: calc(15 * var(--u));
+}
+
+.why__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.why__text {
+  position: absolute;
+  color: var(--color-on-surface-variant);
+  font-size: calc(17 * var(--u));
+  line-height: 1;
+  letter-spacing: calc(-1 * var(--u));
+}
+
+.why {
+  height: calc(1385.1 * var(--u));
+  height: round(down, calc(1385.1 * var(--u)), 1px);
+}
+
+.why__title {
+  top: calc(112 * var(--u));
+}
+
+.why__card {
+  width: calc(320 * var(--u));
+  height: calc(320 * var(--u));
+}
+
+.why__photo {
+  left: calc(20 * var(--u));
+  top: calc(20 * var(--u));
+  width: calc(280 * var(--u));
+  height: calc(214 * var(--u));
+}
+
+.why__text {
+  left: calc(20 * var(--u));
+  width: calc(280 * var(--u));
+}
+
+.why__card--1 {
+  left: calc(80 * var(--u));
+  top: calc(223 * var(--u));
+}
+
+.why__card--1 .why__text {
+  top: calc(268 * var(--u));
+}
+
+.why__card--2 {
+  left: calc(440 * var(--u));
+  top: calc(223 * var(--u));
+}
+
+.why__card--2 .why__photo {
+  left: calc(19 * var(--u));
+  top: calc(19 * var(--u));
+}
+
+.why__card--2 .why__text {
+  left: calc(19 * var(--u));
+  top: calc(251 * var(--u));
+}
+
+.why__card--3 {
+  left: calc(800 * var(--u));
+  top: calc(223 * var(--u));
+}
+
+.why__card--3 .why__text {
+  top: calc(268 * var(--u));
+  width: calc(241 * var(--u));
+}
+
+.why__card--4 {
+  left: calc(80 * var(--u));
+  top: calc(583 * var(--u));
+}
+
+.why__card--4 .why__text {
+  top: calc(285 * var(--u));
+}
+
+.why__card--5 {
+  left: calc(440 * var(--u));
+  top: calc(583 * var(--u));
+}
+
+.why__card--5 .why__text {
+  top: calc(268 * var(--u));
+}
+
+.why__card--6 {
+  left: calc(800 * var(--u));
+  top: calc(583 * var(--u));
+}
+
+.why__card--6 .why__text {
+  top: calc(251 * var(--u));
+}
+
+.why__card--7 {
+  left: calc(80 * var(--u));
+  top: calc(943 * var(--u));
+}
+
+.why__card--7 .why__text {
+  top: calc(268 * var(--u));
+}
+
+.why__card--8 {
+  left: calc(440 * var(--u));
+  top: calc(943 * var(--u));
+}
+
+.why__card--8 .why__text {
+  top: calc(284 * var(--u));
+}
+
+.why__card--9 {
+  left: calc(800 * var(--u));
+  top: calc(943 * var(--u));
+}
+
+.why__card--9 .why__text {
+  top: calc(251 * var(--u));
+}
+
+@media (max-width: 1199px) {
+  .why__card {
+    width: calc(300 * var(--u));
+  }
+  
+  .why__photo {
+    width: calc(260 * var(--u));
+  }
+  
+  .why__card--1 {
+    left: calc(10 * var(--u));
+  }
+  
+  .why__card--2 {
+    left: calc(330 * var(--u));
+  }
+  
+  .why__card--3 {
+    left: calc(650 * var(--u));
+  }
+  
+  .why__card--4 {
+    left: calc(10 * var(--u));
+  }
+  
+  .why__card--5 {
+    left: calc(330 * var(--u));
+  }
+  
+  .why__card--6 {
+    left: calc(650 * var(--u));
+  }
+  
+  .why__card--7 {
+    left: calc(10 * var(--u));
+  }
+  
+  .why__card--8 {
+    left: calc(330 * var(--u));
+  }
+  
+  .why__card--9 {
+    left: calc(650 * var(--u));
+  }
+}
+
+@media (max-width: 959px) {
+  .why {
+    height: calc(2105 * var(--u));
+    height: round(down, calc(2105 * var(--u)), 1px);
+  }
+  
+  .why__card--1 .why__text {
+    top: calc(260 * var(--u));
+  }
+  
+  .why__card--3 {
+    left: calc(10 * var(--u));
+    top: calc(1303 * var(--u));
+  }
+  
+  .why__card--3 .why__text {
+    top: calc(260 * var(--u));
+  }
+  
+  .why__card--4 .why__text {
+    top: calc(261 * var(--u));
+  }
+  
+  .why__card--5 {
+    top: calc(584 * var(--u));
+  }
+  
+  .why__card--5 .why__text {
+    top: calc(259 * var(--u));
+  }
+  
+  .why__card--6 {
+    left: calc(330 * var(--u));
+    top: calc(1303 * var(--u));
+  }
+  
+  .why__card--7 .why__text {
+    top: calc(261 * var(--u));
+    width: calc(261 * var(--u));
+  }
+  
+  .why__card--8 .why__text {
+    top: calc(269 * var(--u));
+  }
+  
+  .why__card--9 {
+    left: calc(10 * var(--u));
+    top: calc(1663 * var(--u));
+  }
+}
+
+@media (max-width: 639px) {
+  .why__title {
+    font-size: calc(30 * var(--u));
+  }
+
+  .why {
+    height: calc(3261.5 * var(--u));
+    height: round(down, calc(3261.5 * var(--u)), 1px);
+  }
+  
+  .why__title {
+    top: calc(72 * var(--u));
+  }
+  
+  .why__card {
+    width: calc(460 * var(--u));
+  }
+  
+  .why__photo {
+    width: calc(420 * var(--u));
+  }
+  
+  .why__text {
+    width: calc(420 * var(--u));
+  }
+  
+  .why__card--1 {
+    top: calc(139 * var(--u));
+  }
+  
+  .why__card--1 .why__text {
+    top: calc(268 * var(--u));
+  }
+  
+  .why__card--2 {
+    left: calc(10 * var(--u));
+    top: calc(1161 * var(--u));
+  }
+  
+  .why__card--2 .why__photo {
+    left: calc(20 * var(--u));
+  }
+  
+  .why__card--2 .why__text {
+    left: calc(20 * var(--u));
+    top: calc(259 * var(--u));
+  }
+  
+  .why__card--3 {
+    top: calc(1501 * var(--u));
+  }
+  
+  .why__card--3 .why__text {
+    top: calc(261 * var(--u));
+    width: calc(420 * var(--u));
+  }
+  
+  .why__card--4 {
+    top: calc(481 * var(--u));
+  }
+  
+  .why__card--4 .why__text {
+    top: calc(269 * var(--u));
+  }
+  
+  .why__card--5 {
+    left: calc(10 * var(--u));
+    top: calc(1841 * var(--u));
+  }
+  
+  .why__card--5 .why__text {
+    top: calc(260 * var(--u));
+    width: calc(382 * var(--u));
+  }
+  
+  .why__card--6 {
+    left: calc(10 * var(--u));
+    top: calc(2181 * var(--u));
+  }
+  
+  .why__card--6 .why__text {
+    top: calc(260 * var(--u));
+  }
+  
+  .why__card--7 {
+    top: calc(821 * var(--u));
+    width: calc(459 * var(--u));
+  }
+  
+  .why__card--7 .why__text {
+    top: calc(270 * var(--u));
+    width: calc(420 * var(--u));
+  }
+  
+  .why__card--8 {
+    left: calc(10 * var(--u));
+    top: calc(2861 * var(--u));
+  }
+  
+  .why__card--8 .why__text {
+    top: calc(268 * var(--u));
+  }
+  
+  .why__card--9 {
+    top: calc(2521 * var(--u));
+  }
+  
+  .why__card--9 .why__text {
+    top: calc(260 * var(--u));
+  }
+}
+
+@media (max-width: 479px) {
+  .why__title {
+    font-size: calc(20 * var(--u));
+  }
+
+  .why__text {
+    display: flex;
+    align-items: center;
+    font-size: calc(13 * var(--u));
+  }
+
+  .why__card--1 .why__text {
+    height: calc(26 * var(--u));
+  }
+
+  .why__card--2 .why__text {
+    height: calc(34 * var(--u));
+  }
+
+  .why__card--3 .why__text {
+    height: calc(34 * var(--u));
+  }
+
+  .why__card--4 .why__text {
+    height: calc(17 * var(--u));
+  }
+
+  .why__card--5 .why__text {
+    height: calc(34 * var(--u));
+  }
+
+  .why__card--6 .why__text {
+    height: calc(34 * var(--u));
+  }
+
+  .why__card--7 .why__text {
+    height: calc(17 * var(--u));
+  }
+
+  .why__card--8 .why__text {
+    height: calc(13 * var(--u));
+  }
+
+  .why__card--9 .why__text {
+    height: calc(34 * var(--u));
+  }
+
+  .why {
+    height: calc(2300.3 * var(--u));
+    height: round(down, calc(2300.3 * var(--u)), 1px);
+  }
+  
+  .why__title {
+    top: calc(54 * var(--u));
+  }
+  
+  .why__card {
+    width: calc(300 * var(--u));
+    height: calc(220 * var(--u));
+  }
+  
+  .why__photo {
+    left: calc(10 * var(--u));
+    top: calc(10 * var(--u));
+    width: calc(280 * var(--u));
+    height: calc(150 * var(--u));
+  }
+  
+  .why__text {
+    left: calc(10 * var(--u));
+    width: calc(280 * var(--u));
+  }
+  
+  .why__card--1 {
+    top: calc(102 * var(--u));
+  }
+
+  .why__card--1 .why__photo {
+    top: calc(10 * var(--u));
+  }
+
+  .why__card--1 .why__text {
+    top: calc(176 * var(--u));
+    width: calc(198 * var(--u));
+  }
+
+  .why__card--2 {
+    top: calc(342 * var(--u));
+  }
+
+  .why__card--2 .why__photo {
+    left: calc(10 * var(--u));
+    top: calc(10 * var(--u));
+  }
+
+  .why__card--2 .why__text {
+    left: calc(10 * var(--u));
+    top: calc(177 * var(--u));
+    width: calc(280 * var(--u));
+  }
+
+  .why__card--3 {
+    top: calc(582 * var(--u));
+  }
+
+  .why__card--3 .why__photo {
+    top: calc(10 * var(--u));
+  }
+
+  .why__card--3 .why__text {
+    top: calc(177 * var(--u));
+    width: calc(259 * var(--u));
+  }
+
+  .why__card--4 {
+    top: calc(1302 * var(--u));
+  }
+
+  .why__card--4 .why__photo {
+    top: calc(10 * var(--u));
+  }
+
+  .why__card--4 .why__text {
+    top: calc(184 * var(--u));
+    width: calc(280 * var(--u));
+  }
+
+  .why__card--5 {
+    top: calc(822 * var(--u));
+  }
+
+  .why__card--5 .why__photo {
+    top: calc(10 * var(--u));
+  }
+
+  .why__card--5 .why__text {
+    top: calc(177 * var(--u));
+    width: calc(264 * var(--u));
+  }
+
+  .why__card--6 {
+    top: calc(1062 * var(--u));
+  }
+
+  .why__card--6 .why__photo {
+    top: calc(10 * var(--u));
+  }
+
+  .why__card--6 .why__text {
+    top: calc(177 * var(--u));
+    width: calc(280 * var(--u));
+  }
+
+  .why__card--7 {
+    top: calc(2022 * var(--u));
+    width: calc(300 * var(--u));
+  }
+
+  .why__card--7 .why__photo {
+    top: calc(10 * var(--u));
+  }
+
+  .why__card--7 .why__text {
+    top: calc(183 * var(--u));
+    width: calc(420 * var(--u));
+  }
+
+  .why__card--8 {
+    top: calc(1782 * var(--u));
+  }
+
+  .why__card--8 .why__photo {
+    top: calc(10 * var(--u));
+  }
+
+  .why__card--8 .why__text {
+    top: calc(183 * var(--u));
+    width: calc(420 * var(--u));
+  }
+
+  .why__card--9 {
+    top: calc(1542 * var(--u));
+  }
+
+  .why__card--9 .why__photo {
+    top: calc(10 * var(--u));
+  }
+
+  .why__card--9 .why__text {
+    top: calc(178 * var(--u));
+    width: calc(247 * var(--u));
+  }
+}

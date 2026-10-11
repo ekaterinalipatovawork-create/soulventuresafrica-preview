@@ -1,0 +1,183 @@
+.gt-exp {
+  position: relative;
+  display: none;
+  overflow: hidden;
+  background: var(--color-on-primary);
+}
+
+.gt-exp__grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.gt-exp__e1,
+.gt-exp__e2,
+.gt-exp__e3,
+.gt-exp__e4,
+.gt-exp__e5,
+.gt-exp__e6,
+.gt-exp__e7,
+.gt-exp__e8,
+.gt-exp__e9,
+.gt-exp__e10,
+.gt-exp__e11,
+.gt-exp__e12,
+.gt-exp__e13 {
+  position: absolute;
+  margin: 0;
+}
+
+.gt-exp .c1 {
+  color: #ae3118;
+}
+
+.gt-exp .c2 {
+  color: var(--color-heading-soft);
+}
+
+
+.gt-exp__grid picture,
+.gt-exp__grid img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gt-exp__grid p {
+  white-space: normal;
+}
+
+.gt-exp__grid a {
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .gt-exp {
+    display: block;
+    height: calc(1480 * var(--u));
+    height: round(down, calc(1480 * var(--u)), 1px);
+  }
+  .gt-exp__e1 {
+    left: calc(185 * var(--u));
+    top: calc(45 * var(--u));
+    width: calc(830 * var(--u));
+    font-size: calc(36 * var(--u));
+    line-height: 1.56;
+    letter-spacing: calc(-1 * var(--u));
+    color: var(--color-heading-soft);
+    font-weight: 400;
+    text-align: start;
+}
+  .gt-exp__e2 {
+    left: calc(20 * var(--u));
+    top: calc(135 * var(--u));
+    width: calc(360 * var(--u));
+    height: calc(500 * var(--u));
+    border-radius: 0;
+}
+  .gt-exp__e3 {
+    left: calc(20 * var(--u));
+    top: calc(635 * var(--u));
+    width: calc(360 * var(--u));
+    font-size: calc(24 * var(--u));
+    line-height: 1.54;
+    letter-spacing: calc(-1 * var(--u));
+    color: var(--color-heading-soft);
+    font-weight: 400;
+    text-align: center;
+}
+  .gt-exp__e4 {
+    left: calc(420 * var(--u));
+    top: calc(134 * var(--u));
+    width: calc(360 * var(--u));
+    height: calc(500 * var(--u));
+    border-radius: 0;
+}
+  .gt-exp__e5 {
+    left: calc(420 * var(--u));
+    top: calc(634 * var(--u));
+    width: calc(360 * var(--u));
+    font-size: calc(24 * var(--u));
+    line-height: 1.54;
+    letter-spacing: calc(-1 * var(--u));
+    color: var(--color-heading-soft);
+    font-weight: 400;
+    text-align: center;
+}
+  .gt-exp__e6 {
+    left: calc(820 * var(--u));
+    top: calc(134 * var(--u));
+    width: calc(360 * var(--u));
+    height: calc(500 * var(--u));
+    border-radius: 0;
+}
+  .gt-exp__e7 {
+    left: calc(820 * var(--u));
+    top: calc(634 * var(--u));
+    width: calc(360 * var(--u));
+    font-size: calc(24 * var(--u));
+    line-height: 1.54;
+    letter-spacing: calc(-1 * var(--u));
+    color: var(--color-heading-soft);
+    font-weight: 400;
+    text-align: center;
+}
+  .gt-exp__e8 {
+    left: calc(20 * var(--u));
+    top: calc(785 * var(--u));
+    width: calc(360 * var(--u));
+    height: calc(500 * var(--u));
+    border-radius: 0;
+}
+  .gt-exp__e9 {
+    left: calc(20 * var(--u));
+    top: calc(1285 * var(--u));
+    width: calc(360 * var(--u));
+    font-size: calc(24 * var(--u));
+    line-height: 1.54;
+    letter-spacing: calc(-1 * var(--u));
+    color: var(--color-heading-soft);
+    font-weight: 400;
+    text-align: center;
+}
+  .gt-exp__e10 {
+    left: calc(420 * var(--u));
+    top: calc(784 * var(--u));
+    width: calc(360 * var(--u));
+    height: calc(500 * var(--u));
+    border-radius: 0;
+}
+  .gt-exp__e11 {
+    left: calc(420 * var(--u));
+    top: calc(1284 * var(--u));
+    width: calc(360 * var(--u));
+    font-size: calc(24 * var(--u));
+    line-height: 1.54;
+    letter-spacing: calc(-1 * var(--u));
+    color: var(--color-heading-soft);
+    font-weight: 400;
+    text-align: center;
+}
+  .gt-exp__e12 {
+    left: calc(820 * var(--u));
+    top: calc(784 * var(--u));
+    width: calc(360 * var(--u));
+    height: calc(508 * var(--u));
+    border-radius: 0;
+}
+  .gt-exp__e13 {
+    left: calc(820 * var(--u));
+    top: calc(1292 * var(--u));
+    width: calc(360 * var(--u));
+    font-size: calc(24 * var(--u));
+    line-height: 1.54;
+    letter-spacing: calc(-1 * var(--u));
+    color: var(--color-heading-soft);
+    font-weight: 400;
+    text-align: center;
+}
+}

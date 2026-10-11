@@ -1,0 +1,244 @@
+.intro {
+  position: relative;
+  height: calc(701 * var(--u));
+  height: round(down, calc(701 * var(--u)), 1px);
+  overflow: hidden;
+  background: var(--color-surface);
+}
+
+.intro__grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.intro__frame,
+.intro__map,
+.intro__title,
+.intro__pill,
+.intro__tag {
+  position: absolute;
+}
+
+.intro__frame {
+  top: calc(121 * var(--u));
+  left: calc(80 * var(--u));
+  width: calc(1040 * var(--u));
+  height: calc(519 * var(--u));
+  border-radius: calc(20 * var(--u));
+  background: var(--color-surface-variant);
+}
+
+.intro__map {
+  top: calc(120 * var(--u));
+  left: calc(80 * var(--u));
+  width: calc(1040 * var(--u));
+  height: calc(519 * var(--u));
+  background: url('../assets/img/africa-map.svg') center / cover no-repeat;
+}
+
+.intro__title {
+  top: calc(268 * var(--u));
+  left: calc(120 * var(--u));
+  width: calc(445 * var(--u));
+  color: var(--color-primary);
+  font-size: calc(35 * var(--u));
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: calc(-2 * var(--u));
+}
+
+.intro__pill {
+  top: calc(373 * var(--u));
+  left: calc(120 * var(--u));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(493 * var(--u));
+  height: calc(74 * var(--u));
+  border-radius: calc(20 * var(--u));
+  background: var(--color-primary);
+}
+
+.intro__pill-text {
+  width: calc(464 * var(--u));
+  color: var(--color-on-primary);
+  font-size: calc(17 * var(--u));
+  line-height: 1;
+  letter-spacing: calc(-1 * var(--u));
+}
+
+.intro__tag {
+  top: calc(481 * var(--u));
+  left: calc(119 * var(--u));
+  width: calc(439 * var(--u));
+  color: var(--color-on-surface-variant);
+  font-size: calc(17 * var(--u));
+  line-height: 1;
+  letter-spacing: calc(-1 * var(--u));
+}
+
+@media (max-width: 1199px) {
+  .intro__frame {
+    left: calc(11 * var(--u));
+    width: calc(940 * var(--u));
+  }
+
+  .intro__map {
+    left: calc(11 * var(--u));
+    width: calc(940 * var(--u));
+  }
+
+  .intro__title,
+  .intro__pill {
+    left: calc(51 * var(--u));
+  }
+
+  .intro__pill {
+    width: calc(419 * var(--u));
+    height: calc(91 * var(--u));
+  }
+
+  .intro__pill-text {
+    width: calc(380 * var(--u));
+  }
+
+  .intro__tag {
+    top: calc(499 * var(--u));
+    left: calc(50 * var(--u));
+  }
+}
+
+@media (max-width: 959px) {
+  .intro {
+    height: calc(1170 * var(--u));
+    height: round(down, calc(1170 * var(--u)), 1px);
+  }
+
+  .intro__frame {
+    top: calc(118 * var(--u));
+    left: calc(10 * var(--u));
+    width: calc(621 * var(--u));
+    height: calc(988 * var(--u));
+  }
+
+  .intro__map {
+    top: calc(430 * var(--u));
+    left: calc(-669 * var(--u));
+    width: calc(1300 * var(--u));
+    height: calc(676 * var(--u));
+  }
+
+  .intro__title {
+    top: calc(158 * var(--u));
+    left: calc(30 * var(--u));
+    width: calc(437 * var(--u));
+  }
+
+  .intro__pill {
+    top: calc(263 * var(--u));
+    left: calc(28 * var(--u));
+    width: calc(580 * var(--u));
+    height: calc(74 * var(--u));
+  }
+
+  .intro__pill-text {
+    width: calc(540 * var(--u));
+  }
+
+  .intro__tag {
+    top: calc(373 * var(--u));
+    left: calc(30 * var(--u));
+    width: calc(580 * var(--u));
+  }
+}
+
+@media (max-width: 639px) {
+  .intro {
+    height: calc(903 * var(--u));
+    height: round(down, calc(903 * var(--u)), 1px);
+  }
+
+  .intro__frame {
+    top: calc(79 * var(--u));
+    width: calc(461 * var(--u));
+    height: calc(784 * var(--u));
+  }
+
+  .intro__map {
+    top: calc(365 * var(--u));
+    left: calc(-471 * var(--u));
+    width: calc(943 * var(--u));
+    height: calc(498 * var(--u));
+  }
+
+  .intro__title {
+    top: calc(110 * var(--u));
+    width: calc(353 * var(--u));
+    font-size: calc(30 * var(--u));
+  }
+
+  .intro__pill {
+    top: calc(208 * var(--u));
+    left: calc(30 * var(--u));
+    width: calc(420 * var(--u));
+    height: calc(91 * var(--u));
+  }
+
+  .intro__pill-text {
+    width: calc(380 * var(--u));
+  }
+
+  .intro__tag {
+    top: calc(334 * var(--u));
+    width: calc(420 * var(--u));
+  }
+}
+
+@media (max-width: 479px) {
+  .intro {
+    height: calc(610 * var(--u));
+    height: round(down, calc(610 * var(--u)), 1px);
+  }
+
+  .intro__frame {
+    top: calc(60 * var(--u));
+    width: calc(300 * var(--u));
+    height: calc(519 * var(--u));
+  }
+
+  .intro__map {
+    top: calc(312 * var(--u));
+    left: calc(-295 * var(--u));
+    width: calc(605 * var(--u));
+    height: calc(267 * var(--u));
+  }
+
+  .intro__title {
+    top: calc(84 * var(--u));
+    left: calc(20 * var(--u));
+    width: calc(225 * var(--u));
+    font-size: calc(20 * var(--u));
+  }
+
+  .intro__pill {
+    top: calc(151 * var(--u));
+    left: calc(21 * var(--u));
+    width: calc(280 * var(--u));
+  }
+
+  .intro__pill-text {
+    width: calc(240 * var(--u));
+    font-size: calc(13 * var(--u));
+    line-height: calc(17 * var(--u));
+  }
+
+  .intro__tag {
+    top: calc(256 * var(--u));
+    left: calc(20 * var(--u));
+    width: calc(280 * var(--u));
+    font-size: calc(14 * var(--u));
+  }
+}

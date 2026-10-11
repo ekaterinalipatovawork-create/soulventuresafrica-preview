@@ -1,0 +1,22 @@
+.tg-float {
+  position: fixed;
+  right: 12px;
+  bottom: 11px;
+  z-index: 40;
+  width: 64px;
+  height: 64px;
+}
+
+.tg-float img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 960px) {
+  .tg-float {
+    right: 54px;
+    bottom: 54px;
+    width: 74px;
+    height: 74px;
+  }
+}

@@ -1,0 +1,122 @@
+.moments {
+  position: relative;
+  height: round(down, calc(824 * var(--u)), 1px);
+  overflow: hidden;
+  background: var(--color-surface);
+}
+
+.moments__grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.moments__title {
+  position: absolute;
+  top: calc(111 * var(--u));
+  left: calc(80 * var(--u));
+  width: calc(1040 * var(--u));
+  color: var(--color-primary);
+  font-size: calc(35 * var(--u));
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: calc(-2 * var(--u));
+}
+
+.moments__title span {
+  color: var(--color-secondary);
+}
+
+.moments__gallery {
+  position: absolute;
+  top: calc(258 * var(--u));
+  left: calc(80 * var(--u));
+  width: calc(1040 * var(--u));
+  height: calc(505 * var(--u));
+}
+
+@media (max-width: 1199px) {
+  .moments {
+    height: round(down, calc(882 * var(--u)), 1px);
+  }
+
+  .moments__title {
+    left: calc(11 * var(--u));
+  }
+
+  .moments__gallery {
+    left: calc(10 * var(--u));
+    width: calc(940 * var(--u));
+    height: calc(562 * var(--u));
+  }
+}
+
+@media (max-width: 959px) {
+  .moments {
+    height: round(down, calc(714 * var(--u)), 1px);
+  }
+
+  .moments__title {
+    left: calc(10 * var(--u));
+    width: calc(620 * var(--u));
+  }
+
+  .moments__gallery {
+    top: calc(256 * var(--u));
+    width: calc(620 * var(--u));
+    height: calc(398 * var(--u));
+  }
+
+  .moments__gallery .gallery__arrow {
+    width: calc(45 * var(--u));
+    height: calc(45 * var(--u));
+  }
+}
+
+@media (max-width: 639px) {
+  .moments {
+    height: round(down, calc(514 * var(--u)), 1px);
+  }
+
+  .moments__title {
+    top: calc(71 * var(--u));
+    width: calc(460 * var(--u));
+    font-size: calc(30 * var(--u));
+  }
+
+  .moments__gallery {
+    top: calc(169 * var(--u));
+    width: calc(460 * var(--u));
+    height: calc(305 * var(--u));
+  }
+
+  .moments__gallery .gallery__arrow {
+    width: calc(40 * var(--u));
+    height: calc(40 * var(--u));
+  }
+}
+
+@media (max-width: 479px) {
+  .moments {
+    height: round(down, calc(353 * var(--u)), 1px);
+  }
+
+  .moments__title {
+    top: calc(55 * var(--u));
+    width: calc(300 * var(--u));
+    font-size: calc(20 * var(--u));
+  }
+
+  .moments__gallery {
+    top: calc(123 * var(--u));
+    width: calc(300 * var(--u));
+    height: calc(200 * var(--u));
+  }
+
+  .moments__gallery .gallery__arrow {
+    width: calc(30 * var(--u));
+    height: calc(30 * var(--u));
+  }
+}

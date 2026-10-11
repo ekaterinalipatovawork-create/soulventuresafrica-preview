@@ -1,0 +1,205 @@
+.parks {
+  position: relative;
+  overflow: hidden;
+  height: round(down, calc(1770 * var(--u)), 1px);
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+.parks--ke {
+  height: round(down, calc(1265 * var(--u)), 1px);
+}
+
+.parks__grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.parks__title {
+  position: absolute;
+  top: calc(49 * var(--u));
+  left: calc(83 * var(--u));
+  width: calc(1035 * var(--u));
+  font-size: calc(35 * var(--u));
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: calc(-2 * var(--u));
+}
+
+.parks__item {
+  position: absolute;
+  width: calc(320 * var(--u));
+  height: calc(450 * var(--u));
+}
+
+.parks__tile,
+.parks__tile picture,
+.parks__tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.parks__tile {
+  cursor: pointer;
+}
+
+.parks__tile img {
+  object-fit: cover;
+}
+
+.parks__name {
+  position: absolute;
+  top: calc(468 * var(--u));
+  left: calc(20 * var(--u));
+  width: calc(300 * var(--u));
+  padding-bottom: calc(3 * var(--u));
+  font-size: calc(17 * var(--u));
+  line-height: calc(17 * var(--u));
+  letter-spacing: calc(-1 * var(--u));
+}
+
+.parks--ke .parks__name {
+  top: calc(470 * var(--u));
+  padding-bottom: 0;
+}
+
+.parks__item:nth-child(3n + 1) { left: calc(80 * var(--u)); }
+.parks__item:nth-child(3n + 2) { left: calc(440 * var(--u)); }
+.parks__item:nth-child(3n) { left: calc(800 * var(--u)); }
+.parks__item:nth-child(-n + 3) { top: calc(160 * var(--u)); }
+.parks__item:nth-child(n + 4):nth-child(-n + 6) { top: calc(684 * var(--u)); }
+.parks__item:nth-child(n + 7) { top: calc(1208 * var(--u)); }
+
+@media (max-width: 1199px) {
+  .parks__title {
+    left: calc(13 * var(--u));
+  }
+
+  .parks__item {
+    width: calc(300 * var(--u));
+  }
+
+  .parks__name {
+    width: calc(280 * var(--u));
+  }
+
+  .parks__item:nth-child(3n + 1) { left: calc(10 * var(--u)); }
+  .parks__item:nth-child(3n + 2) { left: calc(330 * var(--u)); }
+  .parks__item:nth-child(3n) { left: calc(650 * var(--u)); }
+}
+
+@media (max-width: 959px) {
+  .parks { height: round(down, calc(2817 * var(--u)), 1px); }
+  .parks--ke { height: round(down, calc(2802 * var(--u)), 1px); }
+}
+
+@media (min-width: 640px) and (max-width: 959px) {
+  .parks__list .parks__item:nth-child(1) { left: calc(10 * var(--u)); top: calc(160 * var(--u)); }
+  .parks__list .parks__item:nth-child(2) { left: calc(330 * var(--u)); top: calc(160 * var(--u)); }
+  .parks__list .parks__item:nth-child(3) { left: calc(10 * var(--u)); top: calc(2258 * var(--u)); }
+  .parks__list .parks__item:nth-child(4) { left: calc(10 * var(--u)); top: calc(684 * var(--u)); }
+  .parks__list .parks__item:nth-child(5) { left: calc(330 * var(--u)); top: calc(684 * var(--u)); }
+  .parks__list .parks__item:nth-child(6) { left: calc(330 * var(--u)); top: calc(1733 * var(--u)); }
+  .parks__list .parks__item:nth-child(7) { left: calc(10 * var(--u)); top: calc(1208 * var(--u)); }
+  .parks__list .parks__item:nth-child(8) { left: calc(330 * var(--u)); top: calc(1208 * var(--u)); }
+  .parks__list .parks__item:nth-child(9) { left: calc(10 * var(--u)); top: calc(1733 * var(--u)); }
+}
+
+@media (max-width: 639px) {
+  .parks { height: round(down, calc(2038 * var(--u)), 1px); }
+  .parks--ke { height: round(down, calc(2023 * var(--u)), 1px); }
+
+  .parks__title {
+    top: calc(32 * var(--u));
+    left: calc(10 * var(--u));
+    width: calc(460 * var(--u));
+    font-size: calc(30 * var(--u));
+  }
+
+  .parks__item {
+    width: calc(220 * var(--u));
+    height: calc(300 * var(--u));
+  }
+
+  .parks__name {
+    top: calc(313 * var(--u));
+    width: calc(190 * var(--u));
+  }
+
+  .parks--ke .parks__name {
+    top: calc(315 * var(--u));
+    width: calc(230 * var(--u));
+  }
+
+  .parks--ke .parks__item:nth-child(1) .parks__name { width: calc(224 * var(--u)); }
+  .parks--ke .parks__item:nth-child(3) .parks__name { width: calc(202 * var(--u)); }
+  .parks--ke .parks__item:nth-child(4) .parks__name { width: calc(191 * var(--u)); }
+
+  .parks__item:nth-child(odd) { left: calc(10 * var(--u)); }
+  .parks__item:nth-child(even) { left: calc(250 * var(--u)); }
+  .parks__item:nth-child(-n + 2) { top: calc(98 * var(--u)); }
+  .parks__item:nth-child(n + 3):nth-child(-n + 4) { top: calc(485 * var(--u)); }
+  .parks__item:nth-child(n + 5):nth-child(-n + 6) { top: calc(873 * var(--u)); }
+  .parks__item:nth-child(n + 7):nth-child(-n + 8) { top: calc(1261 * var(--u)); }
+  .parks__item:nth-child(9) { top: calc(1649 * var(--u)); }
+}
+
+@media (max-width: 479px) {
+  .parks { height: round(down, calc(1359 * var(--u)), 1px); }
+  .parks--ke { height: round(down, calc(1344 * var(--u)), 1px); }
+
+  .parks__title {
+    top: calc(25 * var(--u));
+    width: calc(300 * var(--u));
+    font-size: calc(20 * var(--u));
+  }
+
+  .parks__item {
+    width: calc(143 * var(--u));
+    height: calc(200 * var(--u));
+  }
+
+  .parks__name,
+  .parks--ke .parks__name {
+    left: calc(19 * var(--u));
+    width: calc(120 * var(--u));
+    font-size: calc(13 * var(--u));
+    line-height: calc(13 * var(--u));
+  }
+
+  .parks__name {
+    top: calc(208 * var(--u));
+  }
+
+  .parks--ke .parks__name {
+    top: calc(210 * var(--u));
+  }
+
+  .parks--ke .parks__item:nth-child(n) .parks__name {
+    width: calc(113 * var(--u));
+  }
+
+  .parks__item:nth-child(even) { left: calc(167 * var(--u)); }
+  .parks__item:nth-child(-n + 2) { top: calc(73 * var(--u)); }
+  .parks__item:nth-child(n + 3):nth-child(-n + 4) { top: calc(327 * var(--u)); }
+  .parks__item:nth-child(n + 5):nth-child(-n + 6) { top: calc(582 * var(--u)); }
+  .parks__item:nth-child(n + 7):nth-child(-n + 8) { top: calc(835 * var(--u)); }
+  .parks__item:nth-child(9) { top: calc(1090 * var(--u)); }
+}
+
+.parks__name::before {
+  content: "";
+  position: absolute;
+  top: calc(1 * var(--u));
+  left: calc(-20 * var(--u));
+  width: calc(9 * var(--u));
+  height: calc(13 * var(--u));
+  background: var(--color-on-surface-variant);
+  opacity: 0.8;
+  -webkit-mask: url('../assets/icons/pin.svg') center / contain no-repeat;
+  mask: url('../assets/icons/pin.svg') center / contain no-repeat;
+}
