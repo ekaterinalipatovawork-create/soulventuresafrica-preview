@@ -184,6 +184,11 @@
   --y: 178;
 }
 
+.contacts__link--5 {
+  --x: 80;
+  --y: 203;
+}
+
 .contacts__phone {
   --x: 990;
   --y: 106;
@@ -294,6 +299,11 @@
     --y: 178;
   }
 
+  .contacts__link--5 {
+    --x: 10;
+    --y: 203;
+  }
+
   .contacts__phone {
     --x: 820;
     --y: 106;
@@ -373,6 +383,11 @@
   .contacts__link--4 {
     --x: 11;
     --y: 178;
+  }
+
+  .contacts__link--5 {
+    --x: 11;
+    --y: 203;
   }
 
   .contacts__phone {
@@ -458,6 +473,11 @@
     --y: 139;
   }
 
+  .contacts__link--5 {
+    --x: 11;
+    --y: 160;
+  }
+
   .contacts__phone {
     --x: 10;
     --y: 895;
@@ -541,6 +561,11 @@
   .contacts__link--4 {
     --x: 10;
     --y: 116;
+  }
+
+  .contacts__link--5 {
+    --x: 10;
+    --y: 137;
   }
 
   .contacts__phone {
